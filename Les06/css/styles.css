@@ -1,0 +1,131 @@
+body { 
+    font-size: 14px;
+    font-family: Arial;
+}
+
+@media screen and (min-width: 480px) and (max-width: 799px) {
+    body {
+        font-size: 12px;
+    }
+}
+
+@media screen and (min-width: 800px) {
+    body {
+        font-size: 16px;
+    }
+}
+
+blockquote{
+    font-style: italic;
+}
+.copyright {
+    text-align: center;
+}
+
+body a {
+    text-decoration: none;
+}
+
+ol {
+    list-style-type: lower-alpha;
+}
+
+figcaption {
+    text-align: right;
+    font-style: italic;
+}
+
+#langmenu {
+    font-size: 10px;
+}
+
+#profile-photo{
+    padding: 10px;
+    width: 200px;
+}
+
+body a.active{
+    text-decoration: underline;
+} 
+
+.comment {
+    background-color: grey;
+    padding: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+a :focus{
+    outline: 1px dotted #f09;
+}
+
+
+#profile-photo{
+    filter: grayscale(50%);
+}
+
+#profile-photo:hover{
+    filter: grayscale(0%);
+}
+
+body ::selection{
+    background-color: indianred;
+    color: blue;
+}
+
+ .intro::first-letter{
+     color: cyan;
+     font-size: 16px;
+ }
+
+#weetjes{
+    list-style: none;
+    list-style: circle;
+}
+main a{
+    color:red;
+    
+}
+main a :hover{
+    color: cyan;
+}
+
+footer a {
+    background-color: green;
+    color: lightgreen;
+    padding: 5px;
+}
+
+h3 ~ p {
+    color: #999;
+  }
+
+  figure img:first-of-type {
+    margin-left: 0px;
+}
+
+figure img {
+    margin-left: 40px;
+}
+footer dd:first-of-type a::before{
+    content: "T ";
+}
+footer dd a::before{
+    content: "E "
+}
+
+p:empty {
+    display: none;
+}
+
+li:nth-child(even) {
+    color: red;
+}
+
+
+
+  
