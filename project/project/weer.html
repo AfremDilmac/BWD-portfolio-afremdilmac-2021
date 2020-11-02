@@ -1,25 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Weer</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Weer</title>
 </head>
+
 <body>
-    
-    <header>
-        <h1>Dilmac</h1>
-    </header>
-    
-        <nav>
-            <ul>
-                <li><a href="home.html">Home</a></li>
-                <li><a href="sport.html">Sport</a></li>
-                <li><a href="weer.html">Weer</a></li>
-                <li><a href="politiek.html">Politiek</a></li>
-                <li><a href="inloggen.html">Inloggen</a></li>
-            </ul>
-        </nav>
-        
+
+  <header>
+    <h1>Dilmac</h1>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="home.html">Home</a></li>
+      <li><a href="sport.html">Sport</a></li>
+      <li><a href="weer.html">Weer</a></li>
+      <li><a href="politiek.html">Politiek</a></li>
+      <li><a href="inloggen.html">Inloggen</a></li>
+      <li><a href="registreer.html">Registreer</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <main>
+    <h1>Weer overzicht</h1>
+    <!--https://www.buienradar.be/overbuienradar/weerdata-op-uw-website (free copyright)-->
+    <a href="http://www.buienradar.be" target="_blank" rel="noopener"><img border="0"
+        src="https://image.buienradar.nl/2.0/image/animation/RadarMapRainWebmercatorBE?height=512&width=550&extension=png&renderBackground=True&RenderBranding=true&renderText=True&history=3&forecast=3&skip=1"></a>
+    <!--Tabel weeroverzicht geinspireerd door: https://www.youtube.com/watch?v=biI9OFH6Nmg -->
+    <table class="content-table">
+      <thead>
+        <tr>
+          <th>Stad</th>
+          <th>Graden</th>
+          <th>Weer</th>
+
+        </tr>
+
+      </thead>
+      <tbody>
+        <tr>
+          <td>Antwerpen</td>
+          <td>18°C</td>
+          <td>Zonnig</td>
+        </tr>
+        <tr class="active-row">
+          <td>Brussel</td>
+          <td>22°C</td>
+          <td>Zonnig</td>
+
+        </tr>
+        <tr>
+          <td>Gent</td>
+          <td>13°C</td>
+          <td>Bewolkt</td>
+        </tr>
+
+
+      </tbody>
+
+    </table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </main>
+
 </body>
+
 </html>

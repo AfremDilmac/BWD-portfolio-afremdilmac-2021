@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
     <title>inloggen</title>
 </head>
 <body>
@@ -18,21 +19,22 @@
             <li><a href="weer.html">Weer</a></li>
             <li><a href="politiek.html">Politiek</a></li>
             <li><a href="inloggen.html">Inloggen</a></li>
+            <li><a href="registreer.html">Registreer</a></li>
+            <li><a href="contact.html">Contact</a></li>
         </ul>
     </nav>
     <main>
         <form>
-            <p>
-              <label for="username">Username:</label>
-              <input type="text" id="username" autofocus>
-            </p>
-            <p>
-              <label for="password">Password:</label>
-              <input type="password" id="password" placeholder="">
-            </p>
-            <button><a href="">Login</a></button>
-
-
+        <label for="email">E-mail</label>
+        <input type="text" placeholder="Voer e-mail in" name="email" id="email" required>
+        <p></p>
+        <label for="wachtwoord">Wachtwoord</label> 
+        <input type="password" placeholder="Voer wachtwoord in" name="wachtwoord" id="wachtwoord" required>
+    <button><a href="home.html">Login</a></button>
+    </form> 
+        
+                
+                    
 
     </main>
 </body>

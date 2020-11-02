@@ -1,28 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
     <title>Contact</title>
 </head>
+
 <body>
-        <!--Titel van pagina-->
-        <header>
-            <h1>Dilmac</h1>
-        </header>
-        <!--Navigatiebalk-->
-        <nav>
-            <ul>
-                <li><a href="home.html">Home</a></li>
-                <li><a href="sport.html">Sport</a></li>
-                <li><a href="weer.html">Weer</a></li>
-                <li><a href="politiek.html">Politiek</a></li>
-                <li><a href="inloggen.html">Inloggen</a></li>
-                <li><a href="contact.html">contact</a></li>
-            </ul>
-        </nav>
-        <main>
-            
+    <!--Titel van pagina-->
+    <header>
+        <h1>Dilmac</h1>
+    </header>
+    <!--Navigatiebalk-->
+    <nav>
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="sport.html">Sport</a></li>
+            <li><a href="weer.html">Weer</a></li>
+            <li><a href="politiek.html">Politiek</a></li>
+            <li><a href="inloggen.html">Inloggen</a></li>
+            <li><a href="registreer.html">Registreer</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <main>
+        <div class="#">
+
+            <form>
+
+                <label for="voornaam">Voornaam</label>
+                <input type="text" id="voornaam" name="voornaam" placeholder="Uw voornaam...">
+                <p>
+                    <label for="familienaam">Familienaam</label>
+                    <input type="text" id="familienaam" name="familienaam" placeholder="Uw familienaam...">
+                    <p>
+                        <label for="subject">Onderwerp</label>
+                    </p>
+                    <textarea id="subject" name="onderwerp" placeholder="Onderwerp schrijven..."
+                        style="height:200px"></textarea>
+                    <p>
+                        <input type="submit" value="Indienen">
+                    </p>
+            </form>
+        </div>
 
 
 
@@ -31,7 +53,8 @@
 
 
 
-        </main>
-    
+    </main>
+
 </body>
+
 </html>
