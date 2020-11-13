@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+	<title>B.1 - relatieve positionering</title>
+	<meta charset="utf-8" />
+
+	<style>
+
+		/* oplossing */
+		
+		.jump {
+    position: relative;
+    bottom: 100px;
+    left: 130px;
+}
+
+
+
+		/* gegeven CSS */
+
+		body {
+			font-family: Arial;
+		}
+		h3 + ul {
+			list-style-type: upper-alpha;
+		}
+		#sample {
+			border: 2px dotted black;
+			margin-top: 30px;
+			padding: 10px;
+			padding-top: 150px;
+		}
+		img {
+			border: 1px solid #ccc;
+		}
+
+	</style>
+</head>
+
+<body>
+	<h3>Menu</h3>	
+	<ul>
+		<li>
+			<h4>centreren</h4>
+			<ol>
+				<li><a href="reeksA1.html">centreren</a></li>
+			</ol>
+		</li>
+		<li>
+			<h4>positionering</h4>
+			<ol>
+				<li>relatieve positionering</li>
+				<li><a href="reeksB2.html">relatief-absolute positionering</a></li>
+				<li><a href="reeksB3.html">fixed positionering</a></li>
+				<li><a href="reeksB4.html">stapelvolgorde</a></li>
+			</ol>
+		</li>
+		<li>
+			<h4>float / clear</h4>
+			<ol>
+				<li><a href="reeksC1.html">links en rechts floaten</a></li>
+				<li><a href="reeksC2.html">clear en herstellen</a></li>
+			</ol>
+		</li>
+		<li>
+			<h4>flexbox</h4>
+			<ol>
+				<li><a href="reeksD1.html">complete oefening</a></li>
+			</ol>
+		</li>
+	</ul>	
+
+	<hr />
+
+	<h3>Opgave B.1: relatieve positionering (<a href="img/oplossingB1.png">screenshot</a>)</h3>	
+	<ol>
+		<li>verschuif de springende figuren 100px naar boven en 130px naar rechts</li>
+	</ol>
+
+	<div id="sample">
+		<img src="img/man2.png" alt="man" class="jump" />
+		<img src="img/man1.png" alt="man" />
+		<img src="img/man3.png" alt="man" />
+		<img src="img/man5.png" alt="man" class="jump" />
+		<img src="img/man4.png" alt="man" />
+	</div>
+
+
+</body>
+</html>

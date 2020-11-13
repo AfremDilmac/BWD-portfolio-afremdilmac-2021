@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+	<title>A.1 - centreren</title>
+	<meta charset="utf-8" />
+	<style>
+
+		/* oplossing */
+
+		#sample {
+    padding: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#box {
+    text-align: center;
+    line-height: 54px;
+}
+
+		/* gegeven CSS */
+
+		body {
+			font-family: Arial;
+		}
+		h3 + ul {
+			list-style-type: upper-alpha;
+		}
+		#sample {
+			border: 2px dotted black;
+			margin-top: 30px;
+			padding: 10px;
+		}
+		img {
+			border: 1px solid #ccc;
+		}
+		#box {
+			background-color: #ccc;
+			border: 2px solid #666;
+			margin: 20px auto;
+			height: 50px;
+			width: 200px;
+		}
+	</style>
+</head>
+
+<body>
+	<h3>Menu</h3>
+	<ul>
+		<li>
+			<h4>centreren</h4>
+			<ol>
+				<li>centreren</li>
+			</ol>
+		</li>
+		<li>
+			<h4>positionering</h4>
+			<ol>
+				<li><a href="reeksB1.html">relatieve positionering</a></li>
+				<li><a href="reeksB2.html">relatief-absolute positionering</a></li>
+				<li><a href="reeksB3.html">fixed positionering</a></li>
+				<li><a href="reeksB4.html">stapelvolgorde</a></li>
+			</ol>
+		</li>
+		<li>
+			<h4>float / clear</h4>
+			<ol>
+				<li><a href="reeksC1.html">links en rechts floaten</a></li>
+				<li><a href="reeksC2.html">clear en herstellen</a></li>
+			</ol>
+		</li>
+		<li>
+			<h4>flexbox</h4>
+			<ol>
+				<li><a href="reeksD1.html">complete oefening</a></li>
+			</ol>
+		</li>
+	</ul>
+	<hr />
+
+	<h3>Opgave A.1: centreren (<a href="img/oplossingA1.png">screenshot</a>)</h3>
+	<ol>
+		<li>geef het kader een breedte van 800px, en centreer het horizontaal (stel marges links en rechts in op <code>auto</code>)</li>
+		<li>centreer de tekst in de box horizontaal (idem)</li>
+		<li>centreer de tekst in de box nu ook verticaal (stel <code>line-height</code> gelijk aan de hoogte van de box)</li>
+	</ol>
+
+	<div id="sample">
+		<p>
+			But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I
+			will give you a complete account of the system, and expound the actual teachings of the great explorer of
+			the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself,
+			because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter
+			consequences that are extremely painful.
+			Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but
+			because occasionally circumstances occur in which toil and pain can procure him some great pleasure. To take
+			a trivial example, which of us ever undertakes laborious physical exercise, except to obtain some advantage
+			from it? But who has any right to find fault with a man who chooses to enjoy a pleasure that has no annoying
+			consequences, or one who avoids a pain that produces no resultant pleasure?
+		</p>
+		<div id="box">
+			hello there
+		</div>
+	</div>
+</body>
+
+</html>

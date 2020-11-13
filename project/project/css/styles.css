@@ -1,0 +1,138 @@
+img {
+    max-width: 100%;
+}
+
+.content-table {
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 0.9em;
+    min-width: 400px;
+    border-radius: 5px 0 0;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgb(0, 0, 0, 0.15);
+
+}
+
+.content-table thead tr {
+    background-color: #43AF00;
+    color: #ffffff;
+    text-align: left;
+    font-weight: bold;
+}
+
+.content-table th,
+.content-table td {
+    padding: 12px 15px;
+}
+
+.content-table tbody tr {
+    border-bottom: 1px solid #dddddd;
+}
+
+.content-table tbody tr:nth-of-type(even) {
+    background-color: #F6F3F3;
+}
+
+.content-table tbody tr:last-of-type {
+    border-bottom: 2px solid #43AF00;
+}
+
+.content-table tbody tr.active-row {
+    font-weight: bold;
+    color: #43AF00;
+}
+
+.fa {
+    padding: 10px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+  }
+  
+  
+  .fa:hover {
+    opacity: 0.7;
+  }
+  
+ 
+  
+  /* Facebook */
+  .fa-facebook {
+    background: #3558a1;
+    color: white;
+  }
+  
+  /* Twitter */
+  .fa-twitter {
+    background: #55ACEE;
+    color: white;
+  }
+     /* Instagram */
+     .fa-instagram{
+         background: rgb(168, 48, 168);
+         color: white;
+  }
+
+  
+  @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+  
+  header{
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+  }
+  
+
+  li, a, button {
+      font-family: "Montserrat", sans-serif;
+      font-weight: 500;
+      font-size: 16px;
+      color: #edf0f1;
+      text-decoration: none;
+  }
+
+  header{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 30px 10%;
+
+  }
+  .logo{
+      cursor: pointer;
+  }
+
+  .nav__links{
+      list-style: none;
+  }
+
+  .nav__links li {
+      display: inline-block;
+      padding: 0px 20px;
+  }
+
+  .nav__links li a {
+      transition: all 0.3s ease 0s;
+  }
+
+  .nav__links li a:hover {
+    color: #6D7070;
+}
+button{
+    padding: 9px 25px;
+    background-color: lightgray;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    color: white;
+}
+ 
+button:hover {
+    background-color: #6D7070;
+}
+
+p, h1, h2, h3{
+    color: black
+}

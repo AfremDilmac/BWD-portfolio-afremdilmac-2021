@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+	<title>C.1 - links en rechts floaten</title>
+	<meta charset="utf-8" />
+	<style>
+
+		/* oplossing */
+	#articleImage1{
+	float: left;
+	}
+	#articleImage2{
+	float: right;
+	}
+	#articleImage3{
+	float: left;
+	}
+
+		/* gegeven CSS */
+
+		body {
+			font-family: Arial;
+		}
+		h3 + ul {
+			list-style-type: upper-alpha;
+		}
+		#sample {
+			margin: 30px auto 0 auto;
+			position: relative;
+			width: 500px;
+			border: 2px dotted black;
+			padding: 10px;
+		}
+
+		#sample h3 {
+			text-transform: uppercase;
+			margin: 10px 0;
+		}
+
+		#sample img {
+			margin: 10px;
+			margin-top: 0;
+		}
+
+	</style>
+</head>
+
+<body>
+	<h3>Menu</h3>	
+	<ul>
+		<li>
+			<h4>centreren</h4>
+			<ol>
+				<li><a href="reeksA1.html">centreren</a></li>
+			</ol>
+		</li>
+		<li>
+			<h4>positionering</h4>
+			<ol>
+				<li><a href="reeksB1.html">relatieve positionering</a></li>
+				<li><a href="reeksB2.html">relatief-absolute positionering</a></li>
+				<li><a href="reeksB3.html">fixed positionering</a></li>
+				<li><a href="reeksB4.html">stapelvolgorde</a></li>
+			</ol>
+		</li>
+		<li>
+			<h4>float / clear</h4>
+			<ol>
+				<li>links en rechts floaten</li>
+				<li><a href="reeksC2.html">clear en restore</a></li>
+			</ol>
+		</li>
+		<li>
+			<h4>flexbox</h4>
+			<ol>
+				<li><a href="reeksD1.html">complete oefening</a></li>
+			</ol>
+		</li>
+	</ul>	
+	<hr />
+
+	<h3>Opgave C.1: links en rechts floaten (<a href="img/oplossingC1.png">screenshot</a>)</h3>	
+	<ol>
+		<li>float de afbeeldingen afwisselend links, rechts en links</li>
+	</ol>
+
+	<div id="sample">
+		<h3>Marc de Vos: De blinde vlekken in het Belgische pensioendebat</h3>
+		<img src="img/articleImage1.jpg" alt="marc de vos" id="articleImage1" />
+		<p>Het politieke debat over de broodnodige pensioenhervorming komt eindelijk op gang. Het regent losse flodders en politieke statements. In Vlaanderen beten socialisten en christendemocraten de spits af met een echt pensioenplan. Beide politieke partijen beogen meer pensioenzekerheid. Lectuur van de programma's laat de lezer niettemin met veel onzekerheid achter. Er is goede wil en een aanzet voor debat met relevante aandachtspunten en enkele lichtpunten, in beide kampen. Maar er hangt nog een dichte mist over de meest cruciale componenten van het pensioenverhaal.</p>
+		<h3>Marc Platel: "De Belgen en hun eigenzinnige koning"</h3>
+		<img src="img/articleImage2.jpg" alt="vrt toren" id="articleImage2" />
+		<p>Je kan het boekje van net geen tweehonderd bladzijden intussen voor een wel heel zachte prijs kopen bij het bekende (Hollandse) huis van vertrouwen voor tweedehandsboeken. Het dateert van 2002, niet eens tien jaar geleden dus. Toen het boekje er was, bleef de te vrezen of te verwachten golf van kritische beschouwingen beperkt tot enkele al dan niet feitelijke algemeenheden. Anderen wuifden het boekje gewoon weg want de auteur was verantwoordelijk voor de studiedienst van wat toen nog de Volksunie was en dus een vanzelfsprekende tegenstander van de monarchie, de Vlaamse nationalisten bij wie hij toen zijn dagelijkse boterham verdiende waren toch a priori republikeinen.</p>
+		<h3>Louis vanDievel blogt</h3>
+		<img src="img/articleImage3.jpg" alt="louis vandievel" id="articleImage3" />
+		<p>Ik zat op de lavarotsen van Tacoron vertederd naar spelende walvissen te kijken, en bedacht dat het leven eigenlijk wel mooi is. Plots evenwel werd het vredige tafereel verstoord door een naderende speedboot, die achterna werd gezeten door een andere speedboot, die van de Guardia Civil. Ze waren elkaar waard qua paardenkracht, waardoor de achtervolgde niet uitliep en de achtervolger niet dichterbij kwam, en dit tot groot jolijt van de nog schaarse maar daarom niet minder rood verbrande en zich vervelende Duitse zonnekloppers. Wie zou er het meeste brandstof aan boord hebben, dat was de vraag.</p>
+	</div>
+
+
+</body>
+</html>

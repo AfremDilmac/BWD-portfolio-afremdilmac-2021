@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+	<title>B.2 - relatief-absolute positionering</title>
+	<meta charset="utf-8" />
+
+	<style>
+		/* oplossing */
+		#mouth {
+			position: relative;
+			top: 300px;
+			left: 100px;
+		}
+
+		#nose {
+			position: relative;
+			top: 200px;
+			right: 45px;
+		}
+
+
+		#eyes {
+			position: relative;
+			bottom: 0px;
+			left: 20px;
+		}
+
+
+
+
+		/* gegeven CSS */
+
+		body {
+			font-family: Arial;
+		}
+
+		h3+ul {
+			list-style-type: upper-alpha;
+		}
+
+		#sample {
+			border: 2px dotted black;
+			height: 461px;
+			margin: 30px auto 0 auto;
+			width: 371px;
+		}
+	</style>
+</head>
+
+<body>
+	<h3>Menu</h3>
+	<ul>
+		<li>
+			<h4>centreren</h4>
+			<ol>
+				<li><a href="reeksA1.html">centreren</a></li>
+			</ol>
+		</li>
+		<li>
+			<h4>positionering</h4>
+			<ol>
+				<li><a href="reeksB1.html">relatieve positionering</a></li>
+				<li>relatief-absolute positionering</li>
+				<li><a href="reeksB3.html">fixed positionering</a></li>
+				<li><a href="reeksB4.html">stapelvolgorde</a></li>
+			</ol>
+		</li>
+		<li>
+			<h4>float / clear</h4>
+			<ol>
+				<li><a href="reeksC1.html">links en rechts floaten</a></li>
+				<li><a href="reeksC2.html">clear en herstellen</a></li>
+			</ol>
+		</li>
+		<li>
+			<h4>flexbox</h4>
+			<ol>
+				<li><a href="reeksD1.html">complete oefening</a></li>
+			</ol>
+		</li>
+	</ul>
+	<hr />
+
+	<h3>Opgave B.2: relatief-absolute positionering (<a href="img/oplossingB2.png">screenshot</a>)</h3>
+	<ol>
+		<li>positioneer mond, neus en ogen binnen het kader</li>
+	</ol>
+
+	<div id="sample">
+		<img src="img/mouth.jpg" alt="mouth" id="mouth" />
+		<img src="img/nose.jpg" alt="nose" id="nose" />
+		<img src="img/eyes.jpg" alt="eyes" id="eyes" />
+	</div>
+
+
+</body>
+
+</html>

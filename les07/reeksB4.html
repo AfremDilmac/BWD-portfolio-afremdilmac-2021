@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+	<title>B.4 - stapelvolgorde</title>
+	<meta charset="utf-8" />
+	<style>
+
+		/* oplossing */
+		
+		#table {
+			z-index: 1;
+
+		}
+		#sample > p{
+			z-index: 2;
+			position: absolute;
+
+		}
+		#card4{
+			z-index: 3;
+
+		}
+		#card2{
+			z-index: 4;
+
+		}
+		#card3{
+			z-index: 5;
+		}
+		#card1 {
+			z-index: 6;
+		}
+
+
+		/* gegeven CSS */
+
+		body {
+			font-family: Arial;
+		}
+		h3 + ul {
+			list-style-type: upper-alpha;
+		}
+		#sample {
+			border: 2px dotted black;
+			height: 400px;
+			margin: 30px auto 0 auto;
+			overflow: hidden;
+			position: relative;
+			width: 800px;
+		}
+		#sample p {
+			opacity: 0.25;
+			line-height: 2;
+			letter-spacing: 0.5em;
+		}
+		#table {
+			position: absolute;
+			left: 50px;
+			top: 35px;
+			width: 700px;
+		}
+		#card1 {
+			position: absolute;
+			left: 385px;
+			top: 150px;
+		}
+		#card2 {
+			position: absolute;
+			left: 330px;
+			top: 150px;
+		}
+		#card3 {
+			position: absolute;
+			left: 360px;
+			top: 150px;
+		}
+		#card4 {
+			position: absolute;
+			left: 300px;
+			top: 150px;
+		}
+
+
+	</style>
+</head>
+
+<body>
+	<h3>Menu</h3>	
+	<ul>
+		<li>
+			<h4>centreren</h4>
+			<ol>
+				<li><a href="reeksA1.html">centreren</a></li>
+			</ol>
+		</li>
+		<li>
+			<h4>positionering</h4>
+			<ol>
+				<li><a href="reeksB1.html">relatieve positionering</a></li>
+				<li><a href="reeksB2.html">relatief-absolute positionering</a></li>
+				<li><a href="reeksB3.html">fixed positionering</a></li>
+				<li>stapelvolgorde</li>
+			</ol>
+		</li>
+		<li>
+			<h4>float / clear</h4>
+			<ol>
+				<li><a href="reeksC1.html">links en rechts floaten</a></li>
+				<li><a href="reeksC2.html">clear en restore</a></li>
+			</ol>
+		</li>
+		<li>
+			<h4>flexbox</h4>
+			<ol>
+				<li><a href="reeksD1.html">complete oefening</a></li>
+			</ol>
+		</li>
+	</ul>	
+	<hr />
+
+	<h3>Opgave B.4: relatieve positionering (<a href="img/oplossingB4.png">screenshot</a>)</h3>	
+	<ol>
+		<li>verander de stapelvolgorde van bord en kaarten volgens voorbeeld (zie screenshot)</li>
+	</ol>
+
+	<div id="sample">
+		<p>
+			P O K E R P O K E R P O K E R P O K E R P O K E R P O K E R P O K E R P O K E R P O K E R P O K E R P O K E R P O K E R P O K E R P O K E R P O K E R P O K E R P O K E R P O K E R
+			P O K E R P O K E R P O K E R P O K E R P O K E R P O K E R P O K E R P O K E R P O K E R P O K E R P O K E R P O K E R P O K E R P O K E R P O K E R P O K E R P O K E R P O K E R
+			P O K E R P O K E R P O K E R P O K E R P O K E R P O K E R P O K E R P O K E R P O K E R P O K E R P O K E R P O K E R P O K E R P O K E R P O K E R P O K E R P O K E R P O K E R
+			P O K E R P O K E R P O K E R P O K E R P O K E R P O K E R P O K E R P O K E R P O K E R P O K E R P O K E R P O K E R P O K E R P O K E R P O K E R P O K E R P O K E R P O K E R
+			P O K E R P O K E R P O K E R P O K E R P O K E R P O K E R P O K E R P O K E R P O K E R P O K E R P O K E R P O K E R P O K E R P O K E R P O K E R P O K E R P O K E R P O K E R
+			P O K E R P O K E R P O K E R P O K E R P O K E R P O K E R P O K E R P O K E R P O K E R P O K E R P O K E R P O K E R P O K E R P O K E R P O K E R P O K E R P O K E R P O K E R
+			P O K E R P O K E R P O K E R P O K E R P O K E R P O K E R P O K E R P O K E R P O K E R P O K E R P O K E R P O K E R P O K E R P O K E R P O K E R P O K E R P O K E R P O K E R
+			P O K E R P O K E R P O K E R P O K E R P O K E R P O K E R P O K E R P O K E R P O K E R P O K E R P O K E R P O K E R P O K E R P O K E R P O K E R P O K E R P O K E R P O K E R
+			P O K E R P O K E R P O K E R P O K E R P O K E R P O K E R P O K E R P O K E R P O K E R P O K E R P O K E R P O K E R P O K E R P O K E R P O K E R P O K E R P O K E R P O K E R
+			P O K E R P O K E R P O K E R P O K E R P O K E R P O K E R P O K E R P O K E R P O K E R P O K E R P O K E R P O K E R P O K E R P O K E R P O K E R P O K E R P O K E R P O K E R
+			P O K E R P O K E R P O K E R P O K E R P O K E R P O K E R P O K E R P O K E R P O K E R P O K E R P O K E R P O K E R P O K E R P O K E R P O K E R P O K E R P O K E R P O K E R
+			P O K E R P O K E R P O K E R P O K E R P O K E R P O K E R P O K E R P O K E R P O K E R P O K E R P O K E R P O K E R P O K E R P O K E R P O K E R P O K E R P O K E R P O K E R
+		</p>
+		<img src="img/pokertable.jpg" alt="poker table" id="table" />
+		<img src="img/card2R.png" alt="queen of hearts" id="card2" />
+		<img src="img/card3R.png" alt="jack of spades" id="card3" />
+		<img src="img/card4R.png" alt="seven of spades" id="card4" />
+		<img src="img/card1R.png" alt="king of hearts" id="card1" />	
+	</div>
+
+</body>
+</html>

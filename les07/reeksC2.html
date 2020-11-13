@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+	<title>C.2 - clear en herstellen</title>
+	<meta charset="utf-8" />
+	<style>
+
+		/* oplossing */
+		#sample h3 {
+            clear: left;
+        }
+        #sample {
+            overflow: hidden;
+        }
+
+		/* gegeven CSS */
+
+		body {
+			font-family: Arial;
+		}
+		h3 + ul {
+			list-style-type: upper-alpha;
+		}
+		#sample {
+			border: 2px dotted black;
+			margin: 30px auto 0 auto;
+			padding: 10px;
+			position: relative;
+			width: 500px;
+		}
+		#sample h3 {
+			margin: 10px 0;
+			text-transform: uppercase;
+		}
+		#sample img {
+			border: 1px solid #aaa;
+			margin: 10px;
+			margin-top: 0;
+		}
+		#img1 {
+			float: left;
+		}
+
+		#img2 {
+			float: right;
+		}
+
+		#img3 {
+			float: left;
+		}
+
+	</style>
+</head>
+
+<body>
+	<h3>Menu</h3>	
+	<ul>
+		<li>
+			<h4>centreren</h4>
+			<ol>
+				<li><a href="reeksA1.html">centreren</a></li>
+			</ol>
+		</li>
+		<li>
+			<h4>positionering</h4>
+			<ol>
+				<li><a href="reeksB1.html">relatieve positionering</a></li>
+				<li><a href="reeksB2.html">relatief-absolute positionering</a></li>
+				<li><a href="reeksB3.html">fixed positionering</a></li>
+				<li><a href="reeksB4.html">stapelvolgorde</a></li>
+			</ol>
+		</li>
+		<li>
+			<h4>float / clear</h4>
+			<ol>
+				<li><a href="reeksC1.html">links en rechts floaten</a></li>
+				<li>clear en herstellen</li>
+			</ol>
+		</li>
+		<li>
+			<h4>flexbox</h4>
+			<ol>
+				<li><a href="reeksD1.html">complete oefening</a></li>
+			</ol>
+		</li>
+	</ul>	
+
+	<hr />
+
+	<h3>Opgave C.2: clear en restore (<a href="img/oplossingC2.png">screenshot</a>)</h3>	
+	<ol>
+		<li>clear de titels</li>
+		<li>herstel de kaderrand</li>
+	</ol>
+
+	<div id="sample">
+		<h3>Marc de Vos: De blinde vlekken in het Belgische pensioendebat</h3>
+		<img src="img/articleImage1.jpg" alt="marc de vos" id="img1" />
+		<p>Het politieke debat over de broodnodige pensioenhervorming komt eindelijk op gang. </p>
+		<h3>Marc Platel: "De Belgen en hun eigenzinnige koning"</h3>
+		<img src="img/articleImage2.jpg" alt="vrt toren" id="img2" />
+		<p>Je kan het boekje van net geen tweehonderd bladzijden intussen voor een wel heel zachte prijs kopen</p>
+		<h3>Louis vanDievel blogt</h3>
+		<img src="img/articleImage3.jpg" alt="louis vandievel" id="img3" />
+		<p>Ik zat op de lavarotsen van Tacoron vertederd naar spelende walvissen te kijken</p>
+	</div>
+
+
+</body>
+</html>

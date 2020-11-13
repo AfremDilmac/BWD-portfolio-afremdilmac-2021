@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+	<title>D.1 - float basis</title>
+	<meta charset="utf-8" />
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<style>
+		/* oplossing */
+		.contact{
+			width: 31%;
+		}
+
+		.contacts{
+			grid-template-rows: auto;
+			width: 100%;		
+		}
+
+		header {
+			display: grid;
+			grid-template-columns: auto 20px;
+		}
+
+		.contact_menu {
+			display: grid;
+			flex-flow: row nowrap;
+		}
+
+		.contact_media {
+			display: flex;
+			flex-flow: row nowrap;
+			align-items: flex-start;
+		}
+
+		footer {
+			display: grid;
+			grid-template-columns: auto auto;
+		}
+		/* gegeven CSS */
+
+
+		body {
+			font-family: Arial;
+		}
+		h3 + ul {
+			list-style-type: upper-alpha;
+		}
+		#sample * {
+			box-sizing: border-box;
+			margin: 0;
+			padding: 0;
+		}
+		#sample {
+			border: 2px dotted black;
+			font-size: smaller;
+			margin: 30px auto 0 auto;
+			padding: 10px;
+			position: relative;
+			width: 900px;
+		}
+		#sample .contact {
+			border: 1px dotted #999;
+			margin: 1%;
+		}
+		#sample .contact header {
+			background-color: #eee;
+			padding: 10px;
+		}
+		#sample .contact header p {
+			font-size: 8px;	
+		}
+		#sample .contact h4 {
+			font-size: 16px;
+			text-transform: uppercase;
+		}
+		#sample .contact ul {
+			list-style: none;
+			margin: 0;
+			padding-left: 10px;
+		}
+		#sample .contact_menu {
+			padding: 10px;
+		}
+		#sample .contact_body {
+			padding: 10px;
+			padding-bottom: 30px;
+		}
+		#sample .contact footer {
+			font-size: smaller;
+			font-style: italic;
+			padding: 10px;
+		}
+		#sample .contact .contact_media a {
+			text-decoration: none;
+			font-size: 30px;
+		}
+		#sample .contact .contact_media li + li {
+			margin-left: 5px;
+		}
+		#sample .contact .contact_media a span {
+			color: #666;
+			display: block;
+			font-size: 1em;
+			transition: color 0.3s;
+		}
+		#sample .contact .contact_media a span:hover {
+			color: #000;
+		}
+
+		
+	</style>
+</head>
+
+<body>
+	<h3>Menu</h3>
+	<ul>
+		<li>
+			<h4>centreren</h4>
+			<ol>
+				<li><a href="reeksA1.html">centreren</a></li>
+			</ol>
+		</li>
+		<li>
+			<h4>positionering</h4>
+			<ol>
+				<li><a href="reeksB1.html">relatieve positionering</a></li>
+				<li><a href="reeksB2.html">relatief-absolute positionering</a></li>
+				<li><a href="reeksB3.html">fixed positionering</a></li>
+				<li><a href="reeksB4.html">stapelvolgorde</a></li>
+			</ol>
+		</li>
+		<li>
+			<h4>float / clear</h4>
+			<ol>
+				<li><a href="reeksC1.html">links en rechts floaten</a></li>
+				<li><a href="reeksC2.html">clear en herstellen</a></li>
+			</ol>
+		</li>
+		<li>
+			<h4>flexbox</h4>
+			<ol>
+				<li>complete oefening</li>
+			</ol>
+		</li>
+	</ul>	
+	<hr />
+
+	<h3>Opgave D.1: relatieve positionering (<a href="img/oplossingD1.png">screenshot</a>)</h3>
+	<ol>
+		<li>stel voor de cards een breedte van 31% in, en zet ze naast elkaar</li>
+		<li>plaats de items in de card headers naast elkaar; aligneer ze verticaal aan de bovenkant</li>
+		<li>zet foto en menu naast elkaar</li>
+		<li>zet de contact icoontjes naast elkaar</li>
+		<li>plaats de items in de card footers naast elkaar; aligneer ze verticaal aan de onderkant</li>
+	</ol>
+
+	<div id="sample">
+		<div id="contacts">
+
+			<article class="contact">
+				<header>
+					<h4>Vladimir Borissov</h4>
+					<p>familie</p>
+				</header>
+				<div class="contact_menu">
+					<img src="img/contact1.jpg" alt="Boris Borissov" />
+					<ul>
+						<li>&gt; <a href="#">bewerken</a>...</li>
+						<li>&gt; <a href="#">verwijderen</a>...</li>
+					</ul>
+				</div>
+				<div class="contact_body">
+					<p>
+						Te krachtige degelijke ad brandstof op ik. Bewijs die beslag gezond leenen ook sunger boomen ons. In upasboom en atjehers gewonnen de uithoudt kolonien toekomst er. Toeneming afstanden resultaat per gas van vreedzame beteekent visschers wij.
+					</p>
+				</div>
+				<footer>
+					<p>toegevoegd op 15/2/2010</p>
+					<ul class="contact_media">
+						<li><a href=""><span class="material-icons">call</span></a></li>
+						<li><a href=""><span class="material-icons">mail</span></a></li>
+						<li><a href=""><span class="material-icons">facebook</span></a></li>
+					</ul>
+				</footer>
+			</article>
+			<article class="contact">
+				<header>
+					<h4>Salvatore Corleone</h4>
+					<p>familie</p>
+				</header>
+				<div class="contact_menu">
+					<img src="img/contact2.jpg" alt="Boris Borissov" />
+					<ul>
+						<li>&gt; <a href="#">bewerken</a>...</li>
+						<li>&gt; <a href="#">verwijderen</a>...</li>
+					</ul>
+				</div>
+				<div class="contact_body">
+					<p>
+						Hun agentschap mag voorloopig met zij belangrijk. Ploeg om dient nu ze ze jonge sinds varen. Behalen planten evenals gif citadel stukken proeven weg tin. Kegels eerder hoogen en nu enorme ze waarde winnen. Are maleiers wie mineraal onzuiver oog zandlaag.
+					</p>
+				</div>
+				<footer>
+					<p>toegevoegd op 15/2/2010</p>
+					<ul class="contact_media">
+						<li><a href=""><span class="material-icons">call</span></a></li>
+						<li><a href=""><span class="material-icons">mail</span></a></li>
+						<li><a href=""><span class="material-icons">facebook</span></a></li>
+					</ul>
+				</footer>
+			</article>
+			<article class="contact">
+				<header>
+					<h4>Emilia Kremileva</h4>
+					<p>collega</p>
+				</header>
+				<div class="contact_menu">
+					<img src="img/contact3.jpg" alt="Boris Borissov" />
+					<ul>
+						<li>&gt; <a href="#">bewerken</a>...</li>
+						<li>&gt; <a href="#">verwijderen</a>...</li>
+					</ul>
+				</div>
+				<div class="contact_body">
+					<p>
+						Uitgegeven interesten vergissing nam der goa dal. Batoe telok kreeg in de. Daaronder hanteeren vereenigd behoorden voorkomen dik mag. Arabische aangelegd mei prachtige aankoopen aan. Schuld zwavel francs nu groeit kosten nu.
+					</p>
+				</div>
+				<footer>
+					<p>toegevoegd op 15/2/2010</p>
+					<ul class="contact_media">
+						<li><a href=""><span class="material-icons">call</span></a></li>
+						<li><a href=""><span class="material-icons">mail</span></a></li>
+						<li><a href=""><span class="material-icons">facebook</span></a></li>
+					</ul>
+				</footer>
+			</article>
+			<article class="contact">
+				<header>
+					<h4>Mirela Matei</h4>
+					<p>vriend</p>
+				</header>
+				<div class="contact_menu">
+					<img src="img/contact4.jpg" alt="Boris Borissov" />
+					<ul>
+						<li>&gt; <a href="#">bewerken</a>...</li>
+						<li>&gt; <a href="#">verwijderen</a>...</li>
+					</ul>
+				</div>
+				<div class="contact_body">
+					<p>
+						Gebrachte er mengeling vervangen en arbeiders is. Bestuur grooter gemaakt planter de ik. Wiel wat zit veel met rang nam deel. Behandelt gevestigd gebrachte rug dik sultanaat versteend wij verkregen. Was hollanders uit meesleuren huwelijken uiteenvalt.
+					</p>
+				</div>
+				<footer>
+					<p>toegevoegd op 15/2/2010</p>
+					<ul class="contact_media">
+						<li><a href=""><span class="material-icons">call</span></a></li>
+						<li><a href=""><span class="material-icons">mail</span></a></li>
+						<li><a href=""><span class="material-icons">facebook</span></a></li>
+					</ul>
+				</footer>
+			</article>
+			<article class="contact">
+				<header>
+					<h4>Natasha De Sousa</h4>
+					<p>collega</p>
+				</header>
+				<div class="contact_menu">
+					<img src="img/contact5.jpg" alt="Boris Borissov" />
+					<ul>
+						<li>&gt; <a href="#">bewerken</a>...</li>
+						<li>&gt; <a href="#">verwijderen</a>...</li>
+					</ul>
+				</div>
+				<div class="contact_body">
+					<p>
+						Schijnt met talrijk een geplant plaatse schepen zee. Goten het zee ellen maakt der. Terug de lange beide reeds jonge ze. Dagen ze of staan meest de in. Ton gesmolten dag aanraking die britschen waaronder besparing bereiding. Te planken ze staande gelegen groeien sombere is wolfram. Op fortuin schijnt af al tijgers eischen beneden.
+					</p>
+				</div>
+				<footer>
+					<p>toegevoegd op 15/2/2010</p>
+					<ul class="contact_media">
+						<li><a href=""><span class="material-icons">call</span></a></li>
+						<li><a href=""><span class="material-icons">mail</span></a></li>
+						<li><a href=""><span class="material-icons">facebook</span></a></li>
+					</ul>
+				</footer>
+			</article>
+		</div>
+	</div>
+
+
+</body>
+
+</html>

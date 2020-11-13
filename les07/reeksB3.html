@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+	<title>B.3 - fixed positionering</title>
+	<meta charset="utf-8" />
+	<style>
+		/* oplossing */
+		#ornamentLinksonder,.sample{
+			position: fixed;
+			  bottom: 0;
+			  left: 0px;
+		}
+
+		#ornamentRechtsonder{
+			position: fixed;
+			  bottom: 0;
+			  right: 0px;
+		}
+
+
+		/* gegeven CSS */
+
+		body {
+			font-family: Arial;
+		}
+		h3 + ul {
+			list-style-type: upper-alpha;
+		}
+		#sample {
+			margin-top: 30px;
+		}
+	</style>
+</head>
+
+<body>
+	<h3>Menu</h3>	
+	<ul>
+		<li>
+			<h4>centreren</h4>
+			<ol>
+				<li><a href="reeksA1.html">centreren</a></li>
+			</ol>
+		</li>
+		<li>
+			<h4>positionering</h4>
+			<ol>
+				<li><a href="reeksB1.html">relatieve positionering</a></li>
+				<li><a href="reeksB2.html">relatief-absolute positionering</a></li>
+				<li>fixed positionering</li>
+				<li><a href="reeksB4.html">stapelvolgorde</a></li>
+			</ol>
+		</li>
+		<li>
+			<h4>float / clear</h4>
+			<ol>
+				<li><a href="reeksC1.html">links en rechts floaten</a></li>
+				<li><a href="reeksC2.html">clear en restore</a></li>
+			</ol>
+		</li>
+		<li>
+			<h4>flexbox</h4>
+			<ol>
+				<li><a href="reeksD1.html">complete oefening</a></li>
+			</ol>
+		</li>
+	</ul>	
+	<hr />
+
+	<h3>Opgave B.3: fixed positionering (<a href="img/oplossingB3.png">screenshot</a>)</h3>
+	<ol>
+		<li>gebruik fixed positionering om de ornamenten linksonder en rechtsonder het browservenster te plaatsen; controleer of ze blijven staan bij scrollen of verkleinen browservenster</li>
+	</ol>
+
+	<div id="sample">
+		<img src="img/ornamentLinksonder.png" alt="ornament" id="ornamentLinksonder" />
+		<img src="img/ornamentRechtsonder.png" alt="ornament" id="ornamentRechtsonder" />
+		<p>
+			But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I
+			will give you a complete account of the system, and expound the actual teachings of the great explorer of
+			the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself,
+			because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter
+			consequences that are extremely painful.
+			Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but
+			because occasionally circumstances occur in which toil and pain can procure him some great pleasure. To take
+			a trivial example, which of us ever undertakes laborious physical exercise, except to obtain some advantage
+			from it? But who has any right to find fault with a man who chooses to enjoy a pleasure that has no annoying
+			consequences, or one who avoids a pain that produces no resultant pleasure?
+		</p>
+		<p>
+			But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I
+			will give you a complete account of the system, and expound the actual teachings of the great explorer of
+			the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself,
+			because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter
+			consequences that are extremely painful.
+			Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but
+			because occasionally circumstances occur in which toil and pain can procure him some great pleasure. To take
+			a trivial example, which of us ever undertakes laborious physical exercise, except to obtain some advantage
+			from it? But who has any right to find fault with a man who chooses to enjoy a pleasure that has no annoying
+			consequences, or one who avoids a pain that produces no resultant pleasure?
+		</p>
+		<p>
+			But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I
+			will give you a complete account of the system, and expound the actual teachings of the great explorer of
+			the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself,
+			because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter
+			consequences that are extremely painful.
+			Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but
+			because occasionally circumstances occur in which toil and pain can procure him some great pleasure. To take
+			a trivial example, which of us ever undertakes laborious physical exercise, except to obtain some advantage
+			from it? But who has any right to find fault with a man who chooses to enjoy a pleasure that has no annoying
+			consequences, or one who avoids a pain that produces no resultant pleasure?
+		</p>
+		<p>
+			But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I
+			will give you a complete account of the system, and expound the actual teachings of the great explorer of
+			the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself,
+			because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter
+			consequences that are extremely painful.
+			Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but
+			because occasionally circumstances occur in which toil and pain can procure him some great pleasure. To take
+			a trivial example, which of us ever undertakes laborious physical exercise, except to obtain some advantage
+			from it? But who has any right to find fault with a man who chooses to enjoy a pleasure that has no annoying
+			consequences, or one who avoids a pain that produces no resultant pleasure?
+		</p>
+		<p>
+			But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I
+			will give you a complete account of the system, and expound the actual teachings of the great explorer of
+			the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself,
+			because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter
+			consequences that are extremely painful.
+			Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but
+			because occasionally circumstances occur in which toil and pain can procure him some great pleasure. To take
+			a trivial example, which of us ever undertakes laborious physical exercise, except to obtain some advantage
+			from it? But who has any right to find fault with a man who chooses to enjoy a pleasure that has no annoying
+			consequences, or one who avoids a pain that produces no resultant pleasure?
+		</p>
+		<p>
+			But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I
+			will give you a complete account of the system, and expound the actual teachings of the great explorer of
+			the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself,
+			because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter
+			consequences that are extremely painful.
+			Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but
+			because occasionally circumstances occur in which toil and pain can procure him some great pleasure. To take
+			a trivial example, which of us ever undertakes laborious physical exercise, except to obtain some advantage
+			from it? But who has any right to find fault with a man who chooses to enjoy a pleasure that has no annoying
+			consequences, or one who avoids a pain that produces no resultant pleasure?
+		</p>
+		<p>
+			But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I
+			will give you a complete account of the system, and expound the actual teachings of the great explorer of
+			the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself,
+			because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter
+			consequences that are extremely painful.
+			Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but
+			because occasionally circumstances occur in which toil and pain can procure him some great pleasure. To take
+			a trivial example, which of us ever undertakes laborious physical exercise, except to obtain some advantage
+			from it? But who has any right to find fault with a man who chooses to enjoy a pleasure that has no annoying
+			consequences, or one who avoids a pain that produces no resultant pleasure?
+		</p>
+	</div>
+
+
+</body>
+
+</html>
