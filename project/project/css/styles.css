@@ -1,6 +1,76 @@
-img {
-    max-width: 100%;
+  /* Background free copyright:  <a href='https://pngtree.com/free-backgrounds'>free background photos frompngtree.com</a> */
+  body{
+    z-index: -1;       
+    background: url("../img/background3.png") no-repeat;
+    background-size: cover;
+} 
+  
+  
+  /* Header NAVIGATIE */
+  @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+  
+  header{
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+  }
+  
+
+  li, a, button {
+      font-family: "Montserrat", sans-serif;
+      font-weight: 500;
+      font-size: 16px;
+      color: #1f667e;
+      text-decoration: none;
+  }
+
+  .login {
+    color: white;
+  }
+
+  header{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 30px 10%;
+
+  }
+  .logo{
+      cursor: pointer;
+  }
+
+  .nav__links{
+      list-style: none;
+  }
+
+  .nav__links li {
+      display: inline-block;
+      padding: 0px 20px;
+  }
+
+  .nav__links li a {
+      transition: all 0.3s ease 0s;
+  }
+
+  .nav__links li a:hover {
+    color: #353535;
 }
+button{
+    padding: 9px 25px;
+    background-color: rgb(2, 136, 177);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    color: white;
+}
+ 
+button:hover {
+    background-color: #000000;
+}
+
+
+/* Tabel WEERGAVEN */
 
 .content-table {
     border-collapse: collapse;
@@ -50,13 +120,12 @@ img {
     text-decoration: none;
   }
   
-  
   .fa:hover {
     opacity: 0.7;
   }
   
  
-  
+  /* Footer */
   /* Facebook */
   .fa-facebook {
     background: #3558a1;
@@ -74,65 +143,3 @@ img {
          color: white;
   }
 
-  
-  @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
-  
-  header{
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-  }
-  
-
-  li, a, button {
-      font-family: "Montserrat", sans-serif;
-      font-weight: 500;
-      font-size: 16px;
-      color: #edf0f1;
-      text-decoration: none;
-  }
-
-  header{
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 30px 10%;
-
-  }
-  .logo{
-      cursor: pointer;
-  }
-
-  .nav__links{
-      list-style: none;
-  }
-
-  .nav__links li {
-      display: inline-block;
-      padding: 0px 20px;
-  }
-
-  .nav__links li a {
-      transition: all 0.3s ease 0s;
-  }
-
-  .nav__links li a:hover {
-    color: #6D7070;
-}
-button{
-    padding: 9px 25px;
-    background-color: lightgray;
-    border: none;
-    border-radius: 50px;
-    cursor: pointer;
-    transition: all 0.3s ease 0s;
-    color: white;
-}
- 
-button:hover {
-    background-color: #6D7070;
-}
-
-p, h1, h2, h3{
-    color: black
-}
