@@ -1,11 +1,16 @@
   /* Background free copyright:  <a href='https://pngtree.com/free-backgrounds'>free background photos frompngtree.com</a> */
-  body{
-    z-index: -1;       
-    background: url("../img/background3.png") no-repeat;
-    background-size: cover;
-} 
-  
-  
+  /* body{ */
+       
+    /* background: url("../img/background3.png") no-repeat; */
+    /* background-size: cover; */
+/* }  */
+  @media screen and (max-width: 750px){
+      .content{
+          flex-basis: 100%;
+      }
+  }
+
+
   /* Header NAVIGATIE */
   @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
   
@@ -20,27 +25,36 @@
       font-family: "Montserrat", sans-serif;
       font-weight: 500;
       font-size: 16px;
-      color: #1f667e;
+      color: #ffffff;
       text-decoration: none;
+      
   }
 
   .login {
     color: white;
   }
 
+
   header{
-      display: flex;
+     
       justify-content: space-between;
       align-items: center;
       padding: 30px 10%;
+      flex-basis: 100%;
 
   }
   .logo{
-      cursor: pointer;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 17%;
   }
 
-  .nav__links{
-      list-style: none;
+  .menu{
+      background-color: rgb(2, 136, 177);
+      display: flex;
+      justify-content: center;
+      border-radius: 50px;
   }
 
   .nav__links li {
@@ -63,12 +77,77 @@ button{
     cursor: pointer;
     transition: all 0.3s ease 0s;
     color: white;
+    
+    
 }
- 
+
+.button1{
+    padding: 9px 25px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    color: white;
+    float: right;
+    margin-bottom: 30px;
+    
+    
+}
+
+.button2{
+    padding: 9px 25px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    color: white;
+}
 button:hover {
     background-color: #000000;
 }
 
+.button {
+    justify-content: space-evenly;
+    
+}
+
+.article { 
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-flow: wrap;
+}
+
+.box {
+    width: 20%;
+    height: auto;
+    margin: 20px;
+    box-sizing: border-box;
+    font-size: auto;
+}
+
+@media screen and (max-width:1200px){
+    .box{
+        width: 40%;
+    }
+}
+
+@media screen and (max-width:600px){
+    .box{
+        width: 90%;
+    }
+}
+
+/* Carousel */
+
+.banner {
+    display: block;
+    margin: 0 auto;
+}
+
+/* Artikels Homepagina */
+
+.articletitel {
+    text-align: center;
+}
 
 /* Tabel WEERGAVEN */
 
@@ -126,19 +205,23 @@ button:hover {
   
  
   /* Footer */
-  /* Facebook */
+  .footer {
+    flex-basis: 100%;
+}
+  
+
+
   .fa-facebook {
     background: #3558a1;
     color: white;
   }
   
-  /* Twitter */
+ 
   .fa-twitter {
     background: #55ACEE;
     color: white;
   }
-     /* Instagram */
-     .fa-instagram{
+ .fa-instagram{
          background: rgb(168, 48, 168);
          color: white;
   }
