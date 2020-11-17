@@ -139,8 +139,8 @@ button:hover {
 /* Carousel */
 
 .banner {
-    display: block;
-    margin: 0 auto;
+    width: 500px;
+    margin:0 auto;
 }
 
 /* Artikels Homepagina */
