@@ -13,18 +13,24 @@
     <header>
         <!--Navigation geleerd op basis van: https://www.youtube.com/watch?v=PwWHL3RyQgk -->
         <img class="logo" src="img/logonobackground.png" width="200" alt="logo">
-            <!--Navigatiebalk-->
-    <nav>
-        <ul class="nav__links">
-            <li><a href="home.html">Home</a></li>
-            <li><a href="sport.html">Sport</a></li>
-            <li><a href="weer.html">Weer</a></li>
-            <li><a href="politiek.html">Politiek</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-    </nav>
-    <a class="cta" href="inloggen.html"><button>Inloggen</button></a>
+        <div class="button1">
+            <a href="inloggen.html"><button>Inloggen</button></a>
+            <a href="registreer.html"><button>Registreer</button></a>
+        </div>
+        <!--Navigatiebalk-->
+        <div class="menu">
+            <nav>
+                <ul class="nav__links">
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="sport.html">Sport</a></li>
+                    <li><a href="weer.html">Weer</a></li>
+                    <li><a href="politiek.html">Politiek</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
+
     <main>
         <!--geïnspireerd door: W3Schools: https://www.w3schools.com/howto/howto_css_register_form.asp-->
 
@@ -50,7 +56,8 @@
                 <option value="frankrijk">Frankrijk</option>
                 <option value="duitsland">Duitsland</option>
             </select>
-            <p>Door een account aan te maken ga je akkoord met <a href="#">onze voorwaarden en privacy</a></p>
+            <p>Door een account aan te maken ga je akkoord met <a class="privacy" href="#">onze voorwaarden en
+                    privacy</a></p>
             <button type="submit" class="registratiebutton">Register</button>
 
 

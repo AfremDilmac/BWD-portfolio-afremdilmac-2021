@@ -107,33 +107,12 @@ button:hover {
     
 }
 
-.article { 
-    width: auto;
-    height: auto;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    flex-flow: wrap;
-}
 
-.box {
-    width: 20%;
-    height: auto;
-    margin: 20px;
-    box-sizing: border-box;
-    font-size: auto;
-}
 
-@media screen and (max-width:1200px){
-    .box{
-        width: 40%;
-    }
-}
-
-@media screen and (max-width:600px){
-    .box{
-        width: 90%;
-    }
+/*main*/
+p {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
 }
 
 /* Carousel */
@@ -143,12 +122,60 @@ button:hover {
     margin:0 auto;
 }
 
-/* Artikels Homepagina */
-
-.articletitel {
-    text-align: center;
+/* Artikels Homepagina geleerd op basis van youtube video: https://www.youtube.com/watch?v=OVINJ5qSp6o */
+body {
+    margin: 0;
+    padding: 0;
 }
 
+.wrapper {
+    padding: 5px;
+    max-width: 960px;
+    width: 95%;
+    margin: 20px auto;
+    
+}
+
+.columns {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    margin: 5px 0;
+}
+
+.column {
+    flex: 1;
+    margin: 2px;
+    padding: 10px;
+}
+
+.column:first-child {
+    margin-left: 0;
+}
+
+.column:last-child {
+    margin-left: 0;
+}
+
+@media screen and (max-width: 980px) {
+    .columns .column {
+        margin-bottom: 5px;
+        flex-basis: 40%;
+    }
+    .columns .column:last-child {
+        flex-basis: 100%;
+        margin: 0;
+    }
+    .columns .column:nth-last-child(2) {
+        margin-right: 0;
+    }
+}
+@media screen and (max-width: 980px) {
+    .columns .column {
+        flex-basis: 100%;
+        margin: 0 0 5px 0;
+    }
+}
 /* Tabel WEERGAVEN */
 
 .content-table {
@@ -158,12 +185,12 @@ button:hover {
     min-width: 400px;
     border-radius: 5px 0 0;
     overflow: hidden;
-    box-shadow: 0 0 20px rgb(0, 0, 0, 0.15);
+    box-shadow: 0 0 20px rgba(163, 152, 152, 0.15);
 
 }
 
 .content-table thead tr {
-    background-color: #43AF00;
+    background-color: rgb(2, 136, 177);
     color: #ffffff;
     text-align: left;
     font-weight: bold;
@@ -175,7 +202,7 @@ button:hover {
 }
 
 .content-table tbody tr {
-    border-bottom: 1px solid #dddddd;
+    border-bottom: 1px solid rgb(2, 136, 177)
 }
 
 .content-table tbody tr:nth-of-type(even) {
@@ -183,12 +210,12 @@ button:hover {
 }
 
 .content-table tbody tr:last-of-type {
-    border-bottom: 2px solid #43AF00;
+    border-bottom: 2px solid rgb(2, 136, 177)
 }
 
 .content-table tbody tr.active-row {
     font-weight: bold;
-    color: #43AF00;
+    color: rgb(2, 136, 177)
 }
 
 .fa {
@@ -203,15 +230,18 @@ button:hover {
     opacity: 0.7;
   }
   
+  .privacy {
+      color: #55ACEE;
+      text-decoration: underline;
+  }
  
   /* Footer */
   .footer {
     flex-basis: 100%;
 }
   
-
-
   .fa-facebook {
+      
     background: #3558a1;
     color: white;
   }
@@ -226,3 +256,7 @@ button:hover {
          color: white;
   }
 
+
+  footer {
+      background-color: #F2F2F2;
+  }

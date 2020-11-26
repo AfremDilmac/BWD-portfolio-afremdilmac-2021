@@ -1,30 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
+<link rel="stylesheet" href="css/styles.css">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/styles.css">
-    <title>Politiek</title>
+    <!--Vendor fonts-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--Vendor styles-->
+    <link rel="stylesheet" href="vendor/slick/slick.css">
+    <link rel="stylesheet" href="vendor/slick/slick-theme.css">
+    <title>Home Dilmac</title>
 </head>
-<body>
 
+<body>
     <!--Titel van pagina-->
+    <!--Afbeeldingen zijn free copyright gevonden op websites zoals pixelbay.com-->
     <header>
         <!--Navigation geleerd op basis van: https://www.youtube.com/watch?v=PwWHL3RyQgk -->
         <img class="logo" src="img/logonobackground.png" width="200" alt="logo">
-            <!--Navigatiebalk-->
-    <nav>
-        <ul class="nav__links">
-            <li><a href="home.html">Home</a></li>
-            <li><a href="sport.html">Sport</a></li>
-            <li><a href="weer.html">Weer</a></li>
-            <li><a href="politiek.html">Politiek</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-    </nav>
-    <a class="cta" href="inloggen.html"><button>Inloggen</button></a>
+        <div class="button1">
+            <a href="inloggen.html"><button>Inloggen</button></a>
+            <a href="registreer.html"><button>Registreer</button></a>
+        </div>
+        <!--Navigatiebalk-->
+        <div class="menu">
+            <nav>
+                <ul class="nav__links">
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="sport.html">Sport</a></li>
+                    <li><a href="weer.html">Weer</a></li>
+                    <li><a href="politiek.html">Politiek</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
-        <h1>Politiek</h1>
+    <!--Artikels-->
+    <main>
+        <div class="wrapper">
+            <h2>Politiek</h2>
+            <h3>Artikels</h3>
+
+            <section class="columns">
+                <article class="column">
+                    <h3>Trump zwijgt over zijn falen</h3>
+                    <img src="img/trump.jpg" width="200" height="121" alt="maradona afbeelding">
+                    <p>Trump zwijgt over mislukking, Biden gaat naar het Witte Huis Amerikaanse verkiezingen...</p>
+                    <a href="artikel trump.html"><button>Lees meer</button></a>
+                </article>
+
+                <article class="column">
+                    <h3>Covid: Frankrijk en Duitsland zullen de maatregelen aanscherpen</h3>
+                    <img src="img/covid.jpg" width="200" height="121" alt="Apple afbeelding">
+                    <p>De galopperende progressie van de Covid-epidemie...</p>
+                    <a href="artikel covid.html"><button>Lees meer</button></a>
+                </article>
+
+                <article class="column">
+                    <h3>Vancouver wil het bezit van harddrugs niet langer strafbaar stellen</h3>
+                    <img src="img/drugs.jpg" width="200" height="121" alt="Apple afbeelding">
+                    <p>In reactie op de opioïdencrisis in British Columbia...</p>
+                    <a href="artikel vancouver.html"><button>Lees meer</button></a>
+                </article>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+
+        <h1>Dilmac</h1>
+        <h3>Laatste nieuws</h3>
+        <h2>Altijd up-to-date!</h2>
+
+        <h3>Volg ons op</h3>
+        <!--CSS geleerd op basis van: https://www.w3schools.com/howto/howto_css_social_media_buttons.asp-->
+        <a href="https://www.facebook.com/DilmacNews" class="fa fa-facebook"></a></li>
+        <a href="https://twitter.com/DilmacNews" class="fa fa-twitter"></a></li>
+        <a href="https://www.instagram.com/dilmacnews/" class="fa fa-instagram"></a></li>
+        <p>&copy; 2020 Dilmac.be</p>
+        <a href="img/" alt="Afbeelding 2"></a>
+    </footer>
 
 </body>
+
 </html>
