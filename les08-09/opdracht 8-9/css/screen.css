@@ -1,37 +1,49 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
 body {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
  }
- 
 
- .wrapper {
+.wrapper {
     max-width: 965px;
     margin: auto;
-    
 }
+
 header {
-    
-/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#77a932+0,78aa34+3,6da029+11,6e9f2a+12,6c9f28+12,6d9e29+13,699c26+14,6b9c28+15,689b25+15,689924+17,62951f+20,649521+20,61941e+21,63941f+21,5d8f1b+25,598d16+27,5b8d18+27,588c15+28,5a8c17+28,578b13+29,588a16+29,578912+30,578914+30,548811+31,568813+31,548811+31,568813+31,548811+35,ebebeb+35,ebebeb+40,ffffff+40,ffffff+78,ebebeb+78,ebebeb+100 */
-
-background: linear-gradient(to bottom,  #77a932 0%,#78aa34 3%,#6da029 11%,#6e9f2a 12%,#6c9f28 12%,#6d9e29 13%,#699c26 14%,#6b9c28 15%,#689b25 15%,#689924 17%,#62951f 20%,#649521 20%,#61941e 21%,#63941f 21%,#5d8f1b 25%,#598d16 27%,#5b8d18 27%,#588c15 28%,#5a8c17 28%,#578b13 29%,#588a16 29%,#578912 30%,#578914 30%,#548811 31%,#568813 31%,#548811 31%,#568813 31%,#548811 35%,#ebebeb 35%,#ebebeb 40%,#ffffff 40%,#ffffff 78%,#ebebeb 78%,#ebebeb 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#77a932', endColorstr='#ebebeb',GradientType=0 ); /* IE6-9 */
-
+background: linear-gradient(to bottom,  #77a932 0%,#548811 80%,#ebebeb 80%,#ebebeb 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 }
 
-#recent {
+header .wrapper {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
 
-    width: calc (100% - 300px);
+header strong {
+    color: #fff;
+    max-height: 400px;
+}
+
+h3 a {
+    text-decoration: none;
+    color: black;
+    text-transform: capitalize;
+}
+
+#recent section {
+    width: calc(100% - 300px);
     margin-right: 50px;
-
 }
 
 #social {
     width: 250px;
     cursor: pointer;
 }
-
-
-
-
 
 header .wrapper a {
     text-decoration: none;
@@ -40,41 +52,133 @@ header .wrapper a {
 
 #einstein {
     position: relative;
-    bottom: 300px;
-    left: 600px;
+    bottom: 50px;
+    left: 800px;
 }
 
 blockquote {
-    position: relative;
-    bottom: 70px;
     font-size: 32px;
     color: lightgray;
-    
 }
 
 .active {
     padding: 8px;
     background: #548811;
     background-clip: border-box; 
-    
-    
 }
 
+.active :hover {
+    background-color: #77a932;
+    transition: 2s;
 
+}
+
+h3 a::before {
+    content: "▸";
+}
+
+.buttontop
+{
+    margin-top: 15px;
+}
+
+.button
+{
+    background-color: #78a933;
+    color: white;
+    padding: 8px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+aside {
+    position: relative;
+    left: 800px;
+    bottom: 300px;
+ width: 250px;
+ padding: 10px;
+}
+
+#recent {
+    display: flex;
+    flex-flow: row nowrap;
+    bottom: 300px;
+    width: 600px;
+}
+
+#recent section 
+{
+    width: 300px;
+    margin-right: 50px;
+}
 
 li {
     text-transform: uppercase;
     list-style-type: none;
     display: inline-block;
     padding: 0 10px;
-    position: relative;
-    bottom: 120px;
-    left: 450px;
+   
 }
 
 footer .wrapper{
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
-    
+    list-style: none;
+}
+
+footer .wrapper a {
+
+    text-decoration: none;
+    color: gray;
+}
+
+footer section ul li a:hover {
+    text-decoration: underline;
+}
+
+footer
+{
+    background-color: lightgray;
+}
+
+
+section ul 
+{
+    padding: 0px;
+}
+
+section ul li
+{
+    padding: 5px;
+    border-bottom: 1px solid grey;
+}
+
+
+#ctaTwitter
+{
+    background-image: url("../images/ctaTwitter.png");
+    height: 70px;
+    background-repeat: no-repeat;
+}
+#ctaFacebook
+{
+    background-image: url("../images/ctaFacebook.png");
+    height: 70px;
+    background-repeat: no-repeat;
+}
+#ctaNetlog
+{
+    background-image: url("../images/ctaNetlog.png");
+    height: 70px;
+    background-repeat: no-repeat;
+}
+
+.tekst
+{
+    position: relative;
+    left: 85px;
+    top: 10px;
 }
