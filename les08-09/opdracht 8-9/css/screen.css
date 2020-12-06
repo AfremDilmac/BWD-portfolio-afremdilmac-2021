@@ -1,13 +1,14 @@
 * {
-    box-sizing: border-box;
+
     margin: 0;
     padding: 0;
+    font-family: 'Trebuchet MS', sans-serif;
 }
 
-
 body {
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
- }
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+
 
 .wrapper {
     max-width: 965px;
@@ -32,7 +33,7 @@ header strong {
 h3 a {
     text-decoration: none;
     color: black;
-    text-transform: capitalize;
+    text-transform: uppercase;
 }
 
 #recent section {
@@ -41,8 +42,8 @@ h3 a {
 }
 
 #social {
-    width: 250px;
-    cursor: pointer;
+    padding: 0;
+    list-style: none;
 }
 
 header .wrapper a {
@@ -79,7 +80,7 @@ h3 a::before {
 
 .buttontop
 {
-    margin-top: 15px;
+    margin-top: auto;
 }
 
 .button
@@ -90,49 +91,102 @@ h3 a::before {
     border-radius: 10px;
     text-decoration: none;
     font-weight: bold;
-    text-transform: capitalize;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    position: relative;
+    top: 20px;
+    
 }
+
+.button:hover{
+    background-color: grey;
+    transition: 0.5s;
+}
+
+
+#bestelnu {
+    text-indent: -9999px;
+    background: url("/images/bestelnu.png") no-repeat;
+    width: 500px;
+    height: 100px;
+}
+
+
+#bestelnu:hover {
+    background-image: linear-gradient(to bottom, ) ;
+}
+
 
 aside {
     position: relative;
     left: 800px;
     bottom: 300px;
- width: 250px;
- padding: 10px;
+    width: 250px;
+    padding: 10px;
+    
+}
+
+#social ul a:hover {
+
+    font-weight: bold;
 }
 
 #recent {
+
     display: flex;
     flex-flow: row nowrap;
-    bottom: 300px;
-    width: 600px;
+    
 }
 
 #recent section 
 {
     width: 300px;
     margin-right: 50px;
+    padding-top: 50px;
 }
 
-li {
+header li {
     text-transform: uppercase;
     list-style-type: none;
     display: inline-block;
     padding: 0 10px;
+    padding-top: 50px;
    
 }
+
+header li:hover{
+    padding: 8px;
+    background: #548811;
+    background-clip: border-box;
+    transition: 0.5s;
+}
+
+footer li {
+    list-style-type: none;
+}
+
+
 
 footer .wrapper{
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
     list-style: none;
+    
 }
+
+footer .wrapper h4 {
+padding: 50px;
+text-transform: uppercase;
+}
+
 
 footer .wrapper a {
 
     text-decoration: none;
     color: gray;
+    display: flex;
+    display: inline-block;
 }
 
 footer section ul li a:hover {
@@ -141,7 +195,7 @@ footer section ul li a:hover {
 
 footer
 {
-    background-color: lightgray;
+    background-color: #E5E5E5;
 }
 
 
@@ -162,20 +216,65 @@ section ul li
     background-image: url("../images/ctaTwitter.png");
     height: 70px;
     background-repeat: no-repeat;
+    padding-left: 80px;
+    padding-top: 10px;
+    font-size: 14px;
+    text-transform: lowercase;
 }
+
+#ctaTwitter::first-letter {
+    text-transform: uppercase;
+
+}
+
 #ctaFacebook
 {
     background-image: url("../images/ctaFacebook.png");
     height: 70px;
     background-repeat: no-repeat;
+    padding-left: 80px;
+    padding-top: 10px;
+    font-size: 14px;
+    text-transform: lowercase;
 }
+
+#ctaFacebook::first-letter {
+    text-transform: uppercase;
+}
+
+#ctaNetlog a {
+    color: black;
+
+}
+
+#ctaTwitter a {
+    color: black;
+
+}
+
+#ctaFacebook a {
+    color: black;
+
+}
+
+
+
 #ctaNetlog
 {
     background-image: url("../images/ctaNetlog.png");
     height: 70px;
     background-repeat: no-repeat;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding-left: 80px;
+    padding-top: 10px;
+    font-size: 14px;
+    text-transform: lowercase;
+    
 }
 
+#ctaNetlog::first-letter  {
+    text-transform: uppercase;
+}
 .tekst
 {
     position: relative;
