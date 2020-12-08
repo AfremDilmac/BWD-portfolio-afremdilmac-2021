@@ -1,0 +1,350 @@
+/* Background free copyright:  <a href='https://pngtree.com/free-backgrounds'>free background photos frompngtree.com</a> */
+/* body{ */
+/* background: url("../img/background3.png") no-repeat; */
+/* background-size: cover; */
+*{
+    font-family: "montserrat";
+        margin: 0;
+        padding: 0
+}
+
+
+@media screen and (max-width: 750px){
+    .content{
+    flex-basis: 100%;
+    }
+}
+
+
+  /* Header NAVIGATIE */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+  
+header{
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 30px 10%;
+    flex-basis: 100%;
+}
+  
+main header li, a, button {
+font-family: "Montserrat", sans-serif;
+font-weight: 500;
+font-size: 16px;
+color: #ffffff;
+text-decoration: none;
+}
+
+.login {
+color: white;
+  }
+
+
+.logo{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 17%;
+}
+
+.menu{
+    background-color: rgb(2, 136, 177);
+    display: flex;
+    justify-content: center;
+    border-radius: 50px;
+    padding: 10px;
+}
+
+.nav__links li {
+      display: inline-block;
+      padding: 0px 20px;
+}
+
+.nav__links li a {
+      transition: all 0.3s ease 0s;
+}
+
+.nav__links li a:hover {
+    color: #353535;
+}
+
+button{
+    padding: 9px 25px;
+    background-color: rgb(2, 136, 177);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    color: white;  
+}
+
+.button1{
+    padding: 9px 25px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    color: white;
+    float: right;
+    margin-bottom: 30px;
+}
+
+.button2{
+    padding: 9px 25px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    color: white;
+}
+
+button:hover {
+    background-color: #000000;
+}
+
+.button {
+    justify-content: space-evenly;
+    
+}
+
+/*main*/
+p {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+}
+
+/* Carousel */
+
+.banner {
+    width: 500px;
+    margin:0 auto;
+}
+
+/* Artikels Homepagina geleerd op basis van youtube video: https://www.youtube.com/watch?v=OVINJ5qSp6o */
+
+
+.wrapper {
+    padding: 5px;
+    max-width: 960px;
+    width: 95%;
+    margin: 20px auto;
+}
+
+.columns {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    margin: 5px 0;
+}
+
+.column {
+    flex: 1;
+    margin: 2px;
+    padding: 10px;
+}
+
+.column p {
+    padding: 10px;
+}
+
+.column:first-child {
+    margin-left: 0;
+}
+
+.column:last-child {
+    margin-left: 0;
+}
+
+@media screen and (max-width: 980px) {
+    .columns .column {
+        margin-bottom: 5px;
+        flex-basis: 40%;
+    }
+    .columns .column:last-child {
+        flex-basis: 100%;
+        margin: 0;
+    }
+    .columns .column:nth-last-child(2) {
+        margin-right: 0;
+    }
+}
+@media screen and (max-width: 980px) {
+    .columns .column {
+        flex-basis: 100%;
+        margin: 0 0 5px 0;
+    }
+}
+/* Tabel WEERGAVEN */
+
+.content-table {
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 0.9em;
+    min-width: 400px;
+    border-radius: 5px 0 0;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(163, 152, 152, 0.15);
+
+}
+
+.content-table thead tr {
+    background-color: rgb(2, 136, 177);
+    color: #ffffff;
+    text-align: left;
+    font-weight: bold;
+}
+
+.content-table th,
+.content-table td {
+    padding: 12px 15px;
+}
+
+.content-table tbody tr {
+    border-bottom: 1px solid rgb(2, 136, 177)
+}
+
+.content-table tbody tr:nth-of-type(even) {
+    background-color: #F6F3F3;
+}
+
+.content-table tbody tr:last-of-type {
+    border-bottom: 2px solid rgb(2, 136, 177)
+}
+
+.content-table tbody tr.active-row {
+    font-weight: bold;
+    color: rgb(2, 136, 177)
+}
+
+  
+.privacy {
+    color: #55ACEE;
+    text-decoration: underline;}
+
+/* Footer */
+.fa {
+    padding: 10px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+  }
+
+.fa:hover {
+    opacity: 0.7;
+  }
+
+.fa-facebook {
+      
+    background: #3558a1;
+    color: white;
+  }
+
+.fa-facebook:hover {
+    background-color: #000000;
+    transition: 0.8s;
+  }
+  
+ 
+.fa-twitter {
+    background: #55ACEE;
+    color: white;
+  }
+
+.fa-twitter:hover {
+    background-color: #000000;
+    transition: 0.8s;
+  }
+
+.fa-instagram{
+    background: rgb(168, 48, 168);
+    color: white;
+         
+  }
+
+.fa-instagram:hover{
+    background-color: #000000;
+    transition: 0.8s;
+  }
+
+.contact{
+    color: black;
+}
+
+.inner-footer {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(2, 136, 177);
+}
+
+.social-links {
+    display: flex;
+
+}
+
+.social-links ul{
+    padding: 10px;
+display: flex;
+width: 300px;
+height: 30px;
+margin: auto;
+}
+
+.social-items{
+    list-style: none;
+}
+
+.social-items a {
+padding: 10px 20px;
+font-size: 35px;
+
+}
+
+.quick-links{
+    display: flex;
+    width: 560px;
+    height: 70px;
+    margin: auto;
+    
+}
+
+.quick-links ul{
+    display: flex;
+    
+}
+
+.quick-items{
+    list-style: none;
+}
+
+footer p {
+    margin: 0;
+    padding: 0;
+}
+
+.quick-items a {
+    text-decoration: none;
+    padding: 0px 15px;
+    font-size: 50px;
+    color: white;
+    transition: all .25s;
+
+}
+
+.quick-items a:hover{
+    color: white;
+}
+
+
+.outer-footer{
+    padding: 10px;
+    text-align: center;
+    color: black;
+    font-size: 18px;
+    background: linear-gradient(to bottom, #0288b1 0%,#00799e, #137491 75%,#135e75 90%, #2c2c2e 100%);
+    background-color: rgb(19, 94, 117);
+}
+
+
+
+footer ul {
+    list-style-type: none;
+
+  }
