@@ -11,7 +11,7 @@ main{
     margin: auto;
 }
 
-.henk, .badge {
+.henk, .badge, .badge2 {
     padding: 5px;
     background-color: black;
     color: white;
@@ -19,6 +19,11 @@ main{
 
 .badge{
     font-weight: bold;
+}
+
+.badge2{
+    font-weight: bold;
+    border-radius: 80%;
 }
 
 .wrapper ul {
@@ -138,7 +143,6 @@ main{
     text-transform: uppercase;
     position: relative;
     top: 20px;
-    border: black;
     width: 125px;
     text-align: center;
 }
