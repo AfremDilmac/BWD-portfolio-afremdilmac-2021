@@ -1,0 +1,34 @@
+footer .wrapper {
+    background-color: #616161;
+    
+}
+
+footer {
+    color: #fff;
+}
+
+footer li{
+    list-style-type: none;
+    display: inline;
+    font-size: 120%;
+    color: black;
+    padding: 0.08em 0.32em;
+}
+
+footer a {
+    text-decoration: none;
+    color: white;
+}
+
+.inactive{
+    color: #ccc;
+}
+
+.comments {
+    color: #000;
+}
+
+.social{
+    display: flex;
+    justify-content: flex-end;
+}

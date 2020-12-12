@@ -1,4 +1,157 @@
+body{
+    background-color: #F1F1F1;
+}
+
+main{
+    display: flex;
+}
+
 .wrapper {
     max-width: 1200px;
     margin: auto;
+}
+
+.henk, .badge {
+    padding: 5px;
+    background-color: black;
+    color: white;
+}
+
+.badge{
+    font-weight: bold;
+}
+
+.wrapper ul {
+    text-align: center;
+    margin-top: 2em;
+    margin-bottom: 1em;
+    margin-left: 2%;
+    margin-right: 2%;
+}
+
+.nav li {
+    display: inline;
+    font-size: 120%;
+}
+
+.nav a {
+    text-decoration: none;
+    color: black;
+    padding: 0.08em 0.32em;
+}
+
+.nav li:hover {
+    background-color: lightgray;
+    color: black;
+    transition: 0.8s;
+    padding: 8px;
+}
+
+.active {
+    padding: 8px;
+    background: lightgray;
+    background-clip: border-box; 
+}
+
+.caard {
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    width: 700px;
+    margin: 2rem;
+    background-color: #fff;
+}
+
+.card {
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    width: 700px;
+    margin: 2rem;
+    background-color: #fff;
+}
+
+
+.cardpopular{
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    width: 400px;
+    margin: 2rem;
+    background-color: #fff;
+}
+
+.cardpopular img{
+    float: left;
+}
+
+.cardpopular li {
+    list-style: none;
+}
+
+.cardpopular h3 {
+    background-color: #ccc;
+    padding: 8px;
+}
+
+
+.tags{
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    width: 400px;
+    margin: 2rem; 
+    background-color: #fff;
+}
+
+.tags li{
+    list-style: none;
+    display: inline;
+    padding: 0.08em 0.32em;
+
+}
+
+.tags a {
+    text-decoration: none;
+    color: #000;
+}
+.tags h3 {
+    background-color: #ccc;
+    padding: 8px;
+}
+
+.henkk{
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    width: 400px;
+    margin: 2rem;
+    background-color: #fff;
+}
+
+
+.button{
+    border-radius: 0px;
+    box-sizing: border-box;
+    border: solid black 1px;
+    padding: 5px;
+}
+
+.button
+{
+    color: black;
+    padding: 8px;
+    border-radius: 0px;
+    text-decoration: none;
+    font-weight: bold;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    position: relative;
+    top: 20px;
+    border: black;
+    width: 125px;
+    text-align: center;
+}
+
+.comments{
+    
+    position: relative;
+    left: 550px;
+    padding-bottom: 10px;
+}
+
+.tag {
+    background-color: black;
+    color: white;
+    padding: 1px;
 }
