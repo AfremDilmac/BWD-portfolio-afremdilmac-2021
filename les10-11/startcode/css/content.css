@@ -132,6 +132,10 @@ main{
     padding: 5px;
 }
 
+#blogentries{
+    width: 66%;
+}
+
 .button
 {
     color: black;
