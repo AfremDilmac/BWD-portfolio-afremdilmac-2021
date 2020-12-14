@@ -61,6 +61,18 @@ button{
     color: #000000;  
 }
 
+.button1 a {
+    background-color: #0d87b8;
+    border-radius: 50px;
+    color: #fff;
+    margin: 10px;
+    padding: 9px 25px;
+}
+
+.button1 a:hover {
+    color: black;
+    transition: 0.8s;
+}
 .button1{
     padding: 9px 25px;
     cursor: pointer;
