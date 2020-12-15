@@ -1,21 +1,24 @@
-*{
+* {
     font-family: "montserrat";
-        margin: 0;
-        padding: 0
+    margin: 0;
+    padding: 0
+    
 }
+
+img { max-width:100%}
 
 .login a {
     color: rgb(2, 136, 177);
     text-decoration: underline;
 }
 
-.login  {
+.login {
     color: black
 }
 
 .banner {
     width: 500px;
-    margin:0 auto;
+    margin: 0 auto;
 }
 
 h2 {
@@ -26,16 +29,16 @@ h2 {
     .columns .column {
         margin-bottom: 5px;
         flex-basis: 40%;
-}
-  
-.columns .column:nth-last-child(2) {
-    flex-basis: 100%;
-    margin: 0;
-}
+    }
 
-.columns .column:last-child {
-    flex-basis: 100%;
-    margin: 0;
+    .columns .column:nth-last-child(2) {
+        flex-basis: 100%;
+        margin: 0;
+    }
+
+    .columns .column:last-child {
+        flex-basis: 100%;
+        margin: 0;
     }
 }
 
