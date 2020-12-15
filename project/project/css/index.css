@@ -6,7 +6,7 @@ p {
 
 .banner {
     width: 500px;
-    margin:0 auto;
+    margin: 0 auto;
 }
 
 .wrapper {
@@ -16,7 +16,7 @@ p {
     margin: 20px auto;
 }
 
-.wrapper .balk{
+.wrapper .balk {
     display: flex;
     justify-content: center;
     margin: 20px;
@@ -43,7 +43,7 @@ p {
 
 
 .artikle h3 {
-    margin:10px;
+    margin: 10px;
 }
 
 
@@ -54,7 +54,7 @@ p {
 
 .artikle p {
     text-align: center;
-    margin:10px;
+    margin: 10px;
     max-width: 200px;
 }
 
@@ -69,7 +69,7 @@ p {
     margin-left: 3.5rem;
 }
 
-.artikle a:hover{
+.artikle a:hover {
     background-color: black;
     transition: 0.8s;
 }
@@ -93,14 +93,17 @@ h3 {
         margin-bottom: 5px;
         flex-basis: 40%;
     }
+
     .columns .column:last-child {
         flex-basis: 100%;
         margin: 0;
     }
+
     .columns .column:nth-last-child(2) {
         margin-right: 0;
     }
 }
+
 @media screen and (max-width: 980px) {
     .columns .column {
         flex-basis: 100%;
