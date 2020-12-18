@@ -1,5 +1,5 @@
 footer .wrapper {
-    font-size: 20px;
+    font-size: 1.25rem;
     justify-content: space-between;
     color: white;
     display: flex;
@@ -21,6 +21,7 @@ footer li{
 footer ul{
     display: flex;
     flex-flow: row nowrap;
+    
 }
 
 footer a {
@@ -29,13 +30,32 @@ footer a {
 }
 
 .inactive{
-    color: #ccc;
+    color: rgb(146, 146, 146);
+    background-color: #535353;
+    border-radius: 0px;
+    box-sizing: border-box;
+    border: solid #535353 1px;
+    padding: 0.625rem;
 }
 
 .comment{
     background-color: #fff;
+    padding: 0.625rem;
 }
 
 .comments {
     color: #000;
+}
+
+.next{
+    background-color: black;
+    border-radius: 0px;
+    box-sizing: border-box;
+    border: solid black 1px;
+    padding: 0.625rem;
+}
+
+
+.social, li{
+    padding: 0.313rem;
 }
