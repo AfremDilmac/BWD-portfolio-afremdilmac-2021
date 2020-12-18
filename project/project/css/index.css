@@ -1,5 +1,6 @@
 body{
     background-color: #F5F5F5;
+    font-size: 1rem;
 }
 
 p {
@@ -9,34 +10,35 @@ p {
 
 
 .banner {
-    width: 500px;
+    max-width: 100%;
+    width: 50%;
     margin: 0 auto;
 }
 
 .wrapper {
     padding: 5px;
-    max-width: 960px;
-    width: 95%;
-    margin: 20px auto;
+    max-width: 50%;
+    width: 100%;
+    margin: 1.25rem auto;
 }
 
 .wrapper .balk {
     display: flex;
     justify-content: center;
-    margin: 20px;
+    margin: 1.25rem;
     max-width: 100%;
 }
 
 .balk h2 {
     background-color: #0d87b8;
-    border-radius: 10px;
+    border-radius: 0.625rem;
     color: #fff;
-    padding: 10px;
+    padding: 0.625rem;
 }
 
 .columns {
     display: flex;
-    margin-left: 100px;
+    margin-left: 6.25rem;
 }
 
 
@@ -47,19 +49,20 @@ p {
 
 
 .artikle h3 {
-    margin: 10px;
+    margin: 0.625rem;
 }
 
 
 .artikle img {
-    margin: 15px;
+    margin: 0.938rem;
     margin-bottom: 5px;
 }
 
 .artikle p {
     text-align: center;
     margin: 10px;
-    max-width: 200px;
+    width: 80%;
+    max-width: 100%;
 }
 
 .artikle a {
@@ -79,9 +82,9 @@ p {
 }
 
 .artikle {
-    margin-right: 15px;
-    max-width: 300px;
-    margin-bottom: 50px;
+    margin-right: 0.938rem;
+    max-width: 100%;
+    margin-bottom: 3.125%;
 }
 
 .wrapper, .banner{
@@ -94,25 +97,4 @@ h3 {
     padding-bottom: 5px;
 }
 
-@media screen and (max-width: 980px) {
-    .columns .column {
-        margin-bottom: 5px;
-        flex-basis: 40%;
-    }
-
-    .columns .column:last-child {
-        flex-basis: 100%;
-        margin: 0;
-    }
-
-    .columns .column:nth-last-child(2) {
-        margin-right: 0;
-    }
-}
-
-@media screen and (max-width: 980px) {
-    .columns .column {
-        flex-basis: 100%;
-        margin: 0 0 5px 0;
-    }
-}
+	

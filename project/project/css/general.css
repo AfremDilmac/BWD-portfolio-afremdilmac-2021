@@ -8,7 +8,7 @@ body {
     height: 100%;
 }
 
-img { max-width:100%}
+img { max-width: 100%}
 
 .login a {
     color: rgb(2, 136, 177);
@@ -20,7 +20,8 @@ img { max-width:100%}
 }
 
 .banner {
-    width: 500px;
+    width: 100%;
+    max-width: 100%;
     margin: 0 auto;
 }
 
