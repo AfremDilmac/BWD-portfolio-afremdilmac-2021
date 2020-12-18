@@ -37,7 +37,6 @@ p {
 }
 
 .columns {
-    display: flex;
     margin-left: 6.25rem;
 }
 
@@ -87,14 +86,17 @@ p {
     margin-bottom: 3.125%;
 }
 
+.artikle h3{
+    margin-top: 20px;
+}
+
 .wrapper, .banner{
     background-color: white;
 }
 
 
-h3 {
-    padding: 0 5px;
-    padding-bottom: 5px;
-}
-
-	
+@media (min-width: 1500px) {
+    .columns {
+      display: flex;
+    }
+  }
