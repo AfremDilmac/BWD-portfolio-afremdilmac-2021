@@ -163,3 +163,16 @@ main{
     color: white;
     padding: 1px;
 }
+
+@keyframes anim1 {
+    0%{
+        transform: scale(0,0);
+    }
+    100%{
+        transform: scale(1,1); 
+    }
+}
+
+#tagline {
+    animation: anim1 1s;
+}

@@ -1,13 +1,10 @@
 footer .wrapper {
-    margin: 0 auto;
-    display: flex;
-    align-items: flex-start;
     font-size: 20px;
-    margin: 20px 25px 0px 25px;
     justify-content: space-between;
-    padding-top: 0px;
     color: white;
-        background-color: #616161;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
 }
 
 footer {
@@ -17,10 +14,13 @@ footer {
 
 footer li{
     list-style-type: none;
-    display: inline;
     font-size: 120%;
-    color: black;
-    padding: 0.08em 0.32em;
+    background-color: #616161;
+}
+
+footer ul{
+    display: flex;
+    flex-flow: row nowrap;
 }
 
 footer a {
@@ -38,9 +38,4 @@ footer a {
 
 .comments {
     color: #000;
-}
-
-.social{
-    display: flex;
-    justify-content: flex-end;
 }
