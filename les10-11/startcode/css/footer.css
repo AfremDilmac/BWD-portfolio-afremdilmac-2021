@@ -1,11 +1,4 @@
-footer .wrapper {
-    font-size: 1.25rem;
-    justify-content: space-between;
-    color: white;
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: space-between;
-}
+
 
 footer {
     color: #fff;
@@ -59,3 +52,14 @@ footer a {
 .social, li{
     padding: 0.313rem;
 }
+
+@media (min-width: 550px) {
+    footer .wrapper {
+    font-size: 1.25rem;
+    justify-content: space-between;
+    color: white;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    }
+  }
