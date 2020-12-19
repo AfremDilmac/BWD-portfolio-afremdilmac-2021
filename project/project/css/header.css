@@ -13,13 +13,12 @@ header {
 .links {
     display: flex;
     justify-content: center;
+    padding: 0.8rem;
 }
 
 .register{
     display: flex;
-    justify-content: flex-end;
-    max-width: 100%;
-    width: 95%;
+    justify-content: center;
 }
 
 
