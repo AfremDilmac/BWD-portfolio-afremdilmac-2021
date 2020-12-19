@@ -1,12 +1,29 @@
+h1 {
+    text-align: center;
+}
+
+.weeroverzicht {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 35%;
+}
+
 .content-table {
     border-collapse: collapse;
     margin: 25px 0;
     font-size: 0.9em;
-    min-width: 400px;
-    border-radius: 5px 0 0;
+    border-radius: 0.5rem;
     overflow: hidden;
     box-shadow: 0 0 20px rgba(163, 152, 152, 0.15);
 
+}
+
+.content-table {
+    width: 60%;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .content-table thead tr {
@@ -38,7 +55,7 @@
     color: rgb(2, 136, 177)
 }
 
-@media screen and (max-width: 980px) {
+@media screen and (min-width: 980px) {
     .columns .column {
         margin-bottom: 5px;
         flex-basis: 40%;
@@ -54,7 +71,7 @@
     }
 }
 
-@media screen and (max-width: 980px) {
+@media screen and (min-width: 980px) {
     .columns .column {
         flex-basis: 100%;
         margin: 0 0 5px 0;

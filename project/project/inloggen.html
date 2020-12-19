@@ -4,21 +4,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/headernav.css">
-    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="styles.css"">
     <link rel="stylesheet" href="css/general.css">
-    <link rel="stylesheet" href="styles.css">
-    <title>Inloggen</title>
+    <link rel=" stylesheet" href="css/headernav.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <!--Vendor fonts-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--Vendor styles-->
+    <link rel="stylesheet" href="vendor/slick/slick.css">
+    <link rel="stylesheet" href="vendor/slick/slick-theme.css">
+    <!--Icoons FontAwesome https://fontawesome.com/-->
+    <script src="https://kit.fontawesome.com/27616b8ba8.js" crossorigin="anonymous"></script>
+    <title>Contact</title>
 </head>
 
 <body>
+    <!--Titel van pagina-->
+    <!--Afbeeldingen zijn free copyright gevonden op websites zoals pixelbay.com-->
     <header>
         <!--Navigation geleerd op basis van: https://www.youtube.com/watch?v=PwWHL3RyQgk -->
-        <img class="logo" src="img/logonobackground.png" width="200" alt="logo">
-        <div class="button1">
-            <a href="inloggen.html"><button>Inloggen</button></a>
-            <a href="registreer.html"><button>Registreer</button></a>
-        </div>
+        <a href="index.html"><img class="logo" src="img/logonobackground.png" alt="logo"></a>
         <!--Navigatiebalk-->
         <div class="menu">
             <nav>
@@ -28,12 +33,16 @@
                     <li><a href="weer.html">Weer</a></li>
                     <li><a href="politiek.html">Politiek</a></li>
                     <li><a href="contact.html">Contact</a></li>
+                    <li class="connexion"><a href="inloggen.html"><i class="fas fa-sign-in-alt"></i></a></li>
+                    <li class="connexion"><a href="registreer.html"><i class="fas fa-edit"></i></a></li>
+
                 </ul>
             </nav>
         </div>
     </header>
-
     <main>
+        <!--geïnspireerd door: W3Schools: https://www.w3schools.com/howto/howto_css_register_form.asp-->
+        <!--Login-->
         <form>
             <label for="email">E-mail</label>
             <input type="text" placeholder="Voer e-mail in" name="email" id="email" required>
@@ -46,12 +55,44 @@
         </form>
         <p>Nog geen account ? U kunt <a href="registreer.html">hier registreren</a></p>
         <button><a href="registreer.html"></a>Registreer</button>
-
-
+    </aside>
 
     </main>
     <!--Footer geleerd op basis van Youtube video: https://www.youtube.com/watch?v=4JQ3q0LVqEI -->
+    <footer class="footer">
+        <div class="inner-footer">
+            <div class="social-links">
+                <ul>
+                    <li class="social-items"><a href="https://www.facebook.com/DilmacNews" class="fa fa-facebook"></a>
+                    </li>
+                    <li class="social-items"><a href="https://twitter.com/DilmacNews" class="fa fa-twitter"></a></li>
+                    <li class="social-items"><a href="https://www.instagram.com/dilmacnews/"
+                            class="fa fa-instagram"></a></li>
+                </ul>
+            </div>
 
+
+            <div class="quick-links">
+                <ul>
+                    <li class="quick-items"><a href="index.html">Home</a></li>
+                    <li class="quick-items"><a href="sport.html">Sport</a></li>
+                    <li class="quick-items"><a href="weer.html">Weer</a></li>
+                    <li class="quick-items"><a href="politiek.html">Politiek</a></li>
+                    <li class="quick-items"><a href="contact.html">Contact</a></li>
+                    <li class="quick-items"><a href="registreer.html">Registreer</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="outer-footer">
+            Copyright &copy; Dilmac 2020
+        </div>
+
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="vendor/slick/slick.js"></script>
+    <script src="js/script.js"></script>
 </body>
 
 </html>

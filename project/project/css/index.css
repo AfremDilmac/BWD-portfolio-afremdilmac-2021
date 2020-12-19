@@ -1,13 +1,3 @@
-body{
-    background-color: #F5F5F5;
-    font-size: 1rem;
-}
-
-p {
-    font-family: "Montserrat", sans-serif;
-    font-weight: 500;
-}
-
 
 .banner {
     max-width: 100%;
@@ -48,7 +38,7 @@ p {
 
 
 .artikle h3 {
-    margin: 0.625rem;
+    margin-left: 1rem;
 }
 
 
@@ -73,6 +63,7 @@ p {
     padding-left: 10px;
     padding-right: 10px;
     margin-left: 3.5rem;
+    text-decoration: none;
 }
 
 .artikle a:hover {
@@ -86,9 +77,6 @@ p {
     margin-bottom: 3.125%;
 }
 
-.artikle h3{
-    margin-top: 20px;
-}
 
 .wrapper, .banner{
     background-color: white;

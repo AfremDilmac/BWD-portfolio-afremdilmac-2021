@@ -1,22 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
-<link rel="stylesheet" href="css/styles.css">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css"">
+    <link rel=" stylesheet" href="css/general.css">
     <link rel=" stylesheet" href="css/headernav.css">
     <link rel="stylesheet" href="css/footer.css">
-    <link rel="stylesheet" href="css/general.css">
-    <link rel="stylesheet" href="css/forms.css">
     <!--Vendor fonts-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!--Vendor styles-->
     <link rel="stylesheet" href="vendor/slick/slick.css">
     <link rel="stylesheet" href="vendor/slick/slick-theme.css">
+    <!--Icoons FontAwesome https://fontawesome.com/-->
     <script src="https://kit.fontawesome.com/27616b8ba8.js" crossorigin="anonymous"></script>
-    <title>Sport</title>
+    <title>Contact</title>
 </head>
 
 <body>
@@ -41,41 +40,38 @@
             </nav>
         </div>
     </header>
-
     <main>
-        <div class="wrapper">
-            <div class="balk">
-                <h2>Sport</h2>
-            </div>
-            <section class="columns">
-                <article class="column">
-                    <div class="artikle">
-                        <h3>Diego Maradona</h3>
-                        <img src="img/maradona.jpg" width="200" height="121" alt="maradona afbeelding">
-                        <p>De voetballer is woensdag op 60-jarige leeftijd overleden...</p>
-                        <a href="artikel maradona.html">Lees meer</a>
-                    </div>
-                </article>
+        <!--geïnspireerd door: W3Schools: https://www.w3schools.com/howto/howto_css_register_form.asp-->
+        <!--registreer-->
+        <form class="registreer">
 
-                <article class="column">
-                    <div class="artikle">
-                        <h3>Joris Kayembe</h3>
-                        <img src="img/Kayembe.jpg" width="200" height="121" alt="Apple afbeelding">
-                        <p>Joris Kayembe verlengt zijn contract bij Charleroi tot 2023...</p>
-                        <a href="artikel-joris-kayembe.html">Lees meer</a>
-                    </div>
-                </article>
+            <h2>Registreren</h2>
+            <p>Vul dit formulier in om een ​​account aan te maken.</p>
 
-                <article class="column">
-                    <div class="artikle">
-                        <h3>ATP Finals</h3>
-                        <img src="img/tennis.jpg" width="200" height="121" alt="Apple afbeelding">
-                        <p>Daniil Medvedev versloeg ook Schwartzman...</p>
-                        <a href="artikel-atp-finals.html">Lees meer</a>
-                    </div>
-                </article>
-            </section>
-        </div>
+            <label for="email">E-mail</label>
+            <input type="text" placeholder="Voer e-mail in" name="email" id="email" required>
+            <p></p>
+            <label for="wachtwoord">Wachtwoord</label>
+            <input type="password" placeholder="Voer wachtwoord in" name="wachtwoord" id="wachtwoord" required>
+            <p></p>
+            <label for="wachtwoord herhalen">Wachtwoord herhalen</label>
+            <input type="password" placeholder="Voer wachtwoord in" name="wachtwoord herhalen" id="wachtwoord-herhalen"
+                required>
+            <p></p>
+            <label for="country">Land</label>
+            <select id="Land" name="land">
+                <option value="belgië">België</option>
+                <option value="nederland">Nederland</option>
+                <option value="frankrijk">Frankrijk</option>
+                <option value="duitsland">Duitsland</option>
+            </select>
+            <p>Door een account aan te maken ga je akkoord met <a class="privacy" href="#">onze voorwaarden en
+                    privacy</a></p>
+            <button type="submit">Register</button>
+            <p>Hebt u al een account ?<a href="inloggen.html"> Login.</a></p>
+        </form>
+
+
     </main>
     <!--Footer geleerd op basis van Youtube video: https://www.youtube.com/watch?v=4JQ3q0LVqEI -->
     <footer class="footer">
@@ -93,25 +89,25 @@
 
             <div class="quick-links">
                 <ul>
-                    <li class="quick-items"><a href="home.html">Home</a></li>
+                    <li class="quick-items"><a href="index.html">Home</a></li>
                     <li class="quick-items"><a href="sport.html">Sport</a></li>
                     <li class="quick-items"><a href="weer.html">Weer</a></li>
                     <li class="quick-items"><a href="politiek.html">Politiek</a></li>
                     <li class="quick-items"><a href="contact.html">Contact</a></li>
-                    <li class="quick-items"><a href="inloggen.html">Inloggen</a></li>
                     <li class="quick-items"><a href="registreer.html">Registreer</a></li>
                 </ul>
             </div>
         </div>
         <div class="outer-footer">
             Copyright &copy; Dilmac 2020
-
         </div>
 
     </footer>
 
-    <!--Footer geleerd op basis van Youtube video: https://www.youtube.com/watch?v=4JQ3q0LVqEI -->
-
+    <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="vendor/slick/slick.js"></script>
+    <script src="js/script.js"></script>
 </body>
 
 </html>
