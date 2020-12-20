@@ -7,9 +7,9 @@
 
 .wrapper {
     padding: 5px;
-    max-width: 50%;
-    width: 100%;
-    margin: 1.25rem auto;
+    max-width: 100%;
+    width: 50%;
+    margin: 2.5rem auto;
 }
 
 .wrapper .balk {
