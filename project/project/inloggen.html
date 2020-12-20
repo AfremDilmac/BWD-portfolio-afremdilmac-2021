@@ -25,37 +25,47 @@
         <!--Navigation geleerd op basis van: https://www.youtube.com/watch?v=PwWHL3RyQgk -->
         <a href="index.html"><img class="logo" src="img/logonobackground.png" alt="logo"></a>
         <!--Navigatiebalk-->
-        <div class="menu">
-            <nav>
-                <ul class="nav__links">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="sport.html">Sport</a></li>
-                    <li><a href="weer.html">Weer</a></li>
-                    <li><a href="politiek.html">Politiek</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                    <li class="connexion"><a href="inloggen.html"><i class="fas fa-sign-in-alt"></i></a></li>
-                    <li class="connexion"><a href="registreer.html"><i class="fas fa-edit"></i></a></li>
+        <nav>
+            <div class="nav__links">
 
-                </ul>
-            </nav>
-        </div>
+                <ul>
+        
+                    <div class="links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="sport.html">Sport</a></li>
+                        <li><a href="weer.html">Weer</a></li>
+                        <li><a href="politiek.html">Politiek</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </div>
+                    <div class="registreer">
+                        <li class="connexion"><a href="inloggen.html"><i class="fas fa-sign-in-alt"></i> Inloggen</a></li>
+                        <li class="connexion"><a href="register.html"><i class="fas fa-edit"></i> registreer</a></li>
+                    </div>
+            </div>
+            </div>
+            </ul>
+        </nav>
     </header>
     <main>
         <!--geïnspireerd door: W3Schools: https://www.w3schools.com/howto/howto_css_register_form.asp-->
         <!--Login-->
+        <div class="wrapper">
         <form>
+            <h2>Inloggen</h2>
+            <h3>Vul dit in om in te loggen</h3>
             <label for="email">E-mail</label>
             <input type="text" placeholder="Voer e-mail in" name="email" id="email" required>
             <p></p>
             <label for="wachtwoord">Wachtwoord</label>
             <input type="password" placeholder="Voer wachtwoord in" name="wachtwoord" id="wachtwoord" required>
             <div class="button">
-                <button><a href="home.html"></a>Login</button>
+                <div class="register"><a href="index.html">Login</a></div>
             </div>
         </form>
-        <p>Nog geen account ? U kunt <a href="registreer.html">hier registreren</a></p>
-        <button><a href="registreer.html"></a>Registreer</button>
-    </aside>
+        <div class="privacy">
+        <p>Nog geen account ?</p><p>U kunt <a class="privacy" href="registreer.html">hier registreren</a></p>
+    </div>
+    </div>
 
     </main>
     <!--Footer geleerd op basis van Youtube video: https://www.youtube.com/watch?v=4JQ3q0LVqEI -->

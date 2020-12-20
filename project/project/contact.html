@@ -23,29 +23,36 @@
       <!--Titel van pagina-->
       <!--Afbeeldingen zijn free copyright gevonden op websites zoals pixelbay.com-->
       <header>
-          <!--Navigation geleerd op basis van: https://www.youtube.com/watch?v=PwWHL3RyQgk -->
-          <a href="index.html"><img class="logo" src="img/logonobackground.png" alt="logo"></a>
-          <!--Navigatiebalk-->
-          <div class="menu">
-              <nav>
-                  <ul class="nav__links">
-                      <li><a href="index.html">Home</a></li>
-                      <li><a href="sport.html">Sport</a></li>
-                      <li><a href="weer.html">Weer</a></li>
-                      <li><a href="politiek.html">Politiek</a></li>
-                      <li><a href="contact.html">Contact</a></li>
-                      <li class="connexion"><a href="inloggen.html"><i class="fas fa-sign-in-alt"></i></a></li>
-                      <li class="connexion"><a href="registreer.html"><i class="fas fa-edit"></i></a></li>
-                     
-                  </ul>
-              </nav>
-          </div>
-      </header>
+        <!--Navigation geleerd op basis van: https://www.youtube.com/watch?v=PwWHL3RyQgk -->
+        <a href="index.html"><img class="logo" src="img/logonobackground.png" alt="logo"></a>
+        <!--Navigatiebalk-->
+        <nav>
+            <div class="nav__links">
+
+                <ul>
+        
+                    <div class="links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="sport.html">Sport</a></li>
+                        <li><a href="weer.html">Weer</a></li>
+                        <li><a href="politiek.html">Politiek</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </div>
+                    <div class="registreer">
+                        <li class="connexion"><a href="inloggen.html"><i class="fas fa-sign-in-alt"></i> Inloggen</a></li>
+                        <li class="connexion"><a href="register.html"><i class="fas fa-edit"></i> registreer</a></li>
+                    </div>
+            </div>
+            </div>
+            </ul>
+        </nav>
+    </header>
     <main>
-        <div class="#">
+        <div class="wrapper">
 
             <form>
-
+                <h2>Contacteer ons!</h2>
+            <h3>Vul dit in om ons te contacteren</h3>
                 <label for="voornaam">Voornaam</label>
                 <input type="text" id="voornaam" name="voornaam" placeholder="Uw voornaam...">
                 <p>
@@ -59,8 +66,7 @@
                 <p>
                     <label for="subject">Onderwerp</label>
                 </p>
-                <textarea id="subject" name="onderwerp" placeholder="Onderwerp schrijven..."
-                    style="height:200px"></textarea>
+                <textarea id="subject" name="onderwerp" placeholder="Onderwerp schrijven..."></textarea>
                 <p>
                     <input type="submit" value="Indienen">
                 </p>

@@ -10,12 +10,55 @@
     text-decoration: none;
 }
 
+/* Registreer en inlog pagina */
+.wrapper {
+    padding: 5px;
+    max-width: 80%;
+    width: 100%;
+    margin: 1.25rem auto;
+    text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
 .artikle a:hover {
     background-color: black;
     transition: 0.8s;
 }
 
-.registreer{
-    text-align: center;
-    background-color: white;
+
+.register a {
+    background-color: #0d87b8;
+    border-radius: 3px;
+    color: #fff;
+    margin: 0.75rem;
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-left: 3.5rem;
+    text-decoration: none;
+
 }
+
+.register {
+    margin: 1rem auto;
+}
+
+.register a:hover {
+    background-color: black;
+    transition: 0.8s;
+}
+
+.privacy a:hover {
+    color: rgb(105, 186, 212);
+    text-decoration: underline;
+}
+
+.privacy a {
+    text-decoration: none;
+}
+
+form p {
+    margin: 2rem;
+}
+
+/* Registreer en inlog pagina */

@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css"">
     <link rel=" stylesheet" href="css/general.css">
-    <link rel=" stylesheet" href="css/headernav.css">
+    <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/footer.css">
     <!--Vendor fonts-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -25,28 +25,36 @@
         <!--Navigation geleerd op basis van: https://www.youtube.com/watch?v=PwWHL3RyQgk -->
         <a href="index.html"><img class="logo" src="img/logonobackground.png" alt="logo"></a>
         <!--Navigatiebalk-->
-        <div class="menu">
-            <nav>
-                <ul class="nav__links">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="sport.html">Sport</a></li>
-                    <li><a href="weer.html">Weer</a></li>
-                    <li><a href="politiek.html">Politiek</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                    <li class="connexion"><a href="inloggen.html"><i class="fas fa-sign-in-alt"></i></a></li>
-                    <li class="connexion"><a href="registreer.html"><i class="fas fa-edit"></i></a></li>
+        <nav>
+            <div class="nav__links">
 
-                </ul>
-            </nav>
-        </div>
+                <ul>
+        
+                    <div class="links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="sport.html">Sport</a></li>
+                        <li><a href="weer.html">Weer</a></li>
+                        <li><a href="politiek.html">Politiek</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </div>
+                    <div class="registreer">
+                        <li class="connexion"><a href="inloggen.html"><i class="fas fa-sign-in-alt"></i> Inloggen</a></li>
+                        <li class="connexion"><a href="register.html"><i class="fas fa-edit"></i> registreer</a></li>
+                    </div>
+            </div>
+            </div>
+            </ul>
+        </nav>
     </header>
+
     <main>
         <!--geïnspireerd door: W3Schools: https://www.w3schools.com/howto/howto_css_register_form.asp-->
         <!--registreer-->
-        <form class="registreer">
+        <div class="wrapper">
+        <form class="registrer">
 
             <h2>Registreren</h2>
-            <p>Vul dit formulier in om een ​​account aan te maken.</p>
+            <h3>Vul dit formulier in om een ​​account aan te maken.</h3>
 
             <label for="email">E-mail</label>
             <input type="text" placeholder="Voer e-mail in" name="email" id="email" required>
@@ -65,10 +73,14 @@
                 <option value="frankrijk">Frankrijk</option>
                 <option value="duitsland">Duitsland</option>
             </select>
-            <p>Door een account aan te maken ga je akkoord met <a class="privacy" href="#">onze voorwaarden en
+            <div class="privacy">
+            <p>Door een account aan te maken ga je akkoord met <a href="#">onze voorwaarden en
                     privacy</a></p>
-            <button type="submit">Register</button>
-            <p>Hebt u al een account ?<a href="inloggen.html"> Login.</a></p>
+                </div>
+            <div class="register"><a href="index.html">Registreer</a></div>
+            <div class="privacy">
+            <p>Hebt u al een account ?<a class="privacy"  href="inloggen.html"> Login</a></p>
+        </div>
         </form>
 
 
