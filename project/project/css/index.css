@@ -9,7 +9,8 @@
     padding: 5px;
     max-width: 100%;
     width: 50%;
-    margin: 2.5rem auto;
+    margin: 0 auto;
+    margin-bottom: 0.5rem;
 }
 
 .wrapper .balk {
@@ -18,6 +19,8 @@
     margin: 1.25rem;
     max-width: 100%;
 }
+
+
 
 .balk h2 {
     background-color: #0d87b8;
@@ -32,6 +35,9 @@
     margin: 5px;
 }
 
+.columns{
+    justify-content: center;
+}
 
 .artikle h3 {
     margin-left: 1rem;
@@ -64,6 +70,7 @@
 }
 
 .artikle {
+    width: 100%;
     max-width: 100%;
     margin-bottom: 3.125%;
 }
