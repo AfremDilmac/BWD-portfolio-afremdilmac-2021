@@ -2,6 +2,12 @@
     max-width: 100%;
     width: 50%;
     margin: 0 auto;
+} 
+
+.banner img{
+    margin-top: 2rem;
+    width: 35rem;
+    height: 18.75rem;
 }
 
 .wrapper {
@@ -19,7 +25,9 @@
     max-width: 100%;
 }
 
-
+.slick-prev:before, .slick-next:before{
+    color: black;
+}
 
 .balk h2 {
     background-color: #0d87b8;
