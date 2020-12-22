@@ -1,54 +1,56 @@
 main{
     display: flex;
 }
-.artikle a {
-    background-color: #0d87b8;
-    border-radius: 3px;
-    color: #fff;
-
-    padding: 5px;
-    padding-left: 10px;
-    padding-right: 10px;
-    text-align: center;
-    text-decoration: none;
-}
-
-/* Registreer en inlog pagina */
-.wrapper {
-    padding: 5px;
-    max-width: 65%;
-    width: 100%;
-    margin: 1.25rem auto;
-    text-align: center;
-    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
-    margin-bottom: 4rem;
-    background-color: white;
-}
 
 aside{
-    max-width: 33%;
+    width: 25%;
+    margin: 0 auto;
 }
 
 .wrapper ul{
     list-style: none;
 }
 
-
-
-.wrapper h2{
-    font-size: 2.4rem;
+.artikelimg{
+    text-align: center;
+    margin-top: 1rem;
+    margin-bottom: 5rem;
 }
 
-aside .meer img{
-    width: 200px;
-    height: 200px;
-    float: left;
-    padding: 0px 10px;   
+.wrapper {
+    padding: 5px;
+    max-width: 100%;
+    width: 63%;
+    margin: 0 auto;
+    margin-bottom: 0.5rem;
+    background-color: white;
+    box-shadow: 0px 4px 20px 2px #8884;
+}
+.wrapper h2{
+    font-size: 2.4rem;
+    text-align: center;
+}
+
+.wrapper p{
+    margin: 1rem;
+}
+.meer img{
+   max-width: 70%;
 }
 
 .meer ul{
     text-align: center;
     list-style: none;
+
+}
+
+.meer li{
+    text-align: center;
+
+}
+
+.wrapper img{
+    width: 500px;
 }
 
 .meer img{
@@ -57,8 +59,11 @@ aside .meer img{
 }
 
 .meer a{
+    margin: 1rem;
+    margin-top: 1rem;
     text-decoration: none;
     color: black;
+    text-align: center;
 }
 
 .meer a:hover{
@@ -73,22 +78,18 @@ aside .meer img{
 .meer h3{
     background-color: #f1f1f1;    
     margin: 0px;
-    padding: 15px 0px 15px 10px;
+    padding: 2rem;
+    font-size: 1.5rem;
 }
 
 .meer{
     background-color: white;
-    max-width: 100%;
-    width: 100%;
     justify-content: center;
     box-shadow: 0px 4px 20px 2px #8884;
     margin-bottom: 15px;
     font-size: 18px;    
-    display: flex;
     margin: 1.25rem auto;
-}
-.artikelimg{
-    margin: 5rem;
+    text-align: center;
 }
 
 .title{
@@ -97,71 +98,4 @@ aside .meer img{
     font-size: 1.25rem;
 }
 
-.smallwrapper .balk {
-    display: flex;
-    justify-content: center;
-    margin: 1.25rem;
-    max-width: 100%;
-}
 
-.smallwrapper h2{
-    background-color: #0d87b8;
-    border-radius: 0.625rem;
-    color: #fff;
-    padding: 0.625rem;
-}
-
-.smallwrapper {
-    padding: 5px;
-    max-width: 100%;
-    width: 50%;
-    margin: 0 auto;
-    margin-bottom: 0.5rem;
-    background-color: white;
-}
-
-.artikle a:hover {
-    background-color: black;
-    transition: 0.8s;
-}
-
-.column{
-    text-align: center;
-}
-
-.register a {
-    background-color: #0d87b8;
-    border-radius: 3px;
-    color: #fff;
-    margin: 0.75rem;
-    padding: 5px;
-    padding-left: 10px;
-    padding-right: 10px;
-    margin-left: 3.5rem;
-    text-decoration: none;
-
-}
-
-.register {
-    margin: 1rem auto;
-}
-
-.register a:hover {
-    background-color: black;
-    transition: 0.8s;
-}
-
-.privacy a:hover {
-    color: rgb(105, 186, 212);
-    text-decoration: underline;
-}
-
-.privacy a {
-    text-decoration: none;
-}
-
-form p {
-    margin: 2rem;
-}
-
-/* Registreer en inlog pagina */
