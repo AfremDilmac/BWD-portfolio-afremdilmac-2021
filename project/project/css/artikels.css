@@ -3,7 +3,7 @@ main{
 }
 
 aside{
-    width: 25%;
+    width: 15%;
     margin: 0 auto;
 }
 
@@ -20,7 +20,7 @@ aside{
 .wrapper {
     padding: 5px;
     max-width: 100%;
-    width: 63%;
+    width: 80%;
     margin: 0 auto;
     margin-bottom: 0.5rem;
     background-color: white;
@@ -35,7 +35,7 @@ aside{
     margin: 1rem;
 }
 .meer img{
-   max-width: 70%;
+  width: 10rem;
 }
 
 .meer ul{
@@ -49,21 +49,16 @@ aside{
 
 }
 
-.wrapper img{
-    width: 500px;
-}
-
 .meer img{
     margin-top: 1rem;
     margin-bottom: 1.5rem;
 }
 
 .meer a{
-    margin: 1rem;
-    margin-top: 1rem;
+    
     text-decoration: none;
     color: black;
-    text-align: center;
+    justify-content: center;
 }
 
 .meer a:hover{
