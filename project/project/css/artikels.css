@@ -93,4 +93,14 @@ aside{
     font-size: 1.25rem;
 }
 
+.artikle a {
+    background-color: #0d87b8;
+    border-radius: 0.188rem;
+    color: #fff;
 
+    padding: 0.313rem;
+    padding-left: 0.625rem;
+    padding-right: 0.625rem;
+    text-align: center;
+    text-decoration: none;
+}

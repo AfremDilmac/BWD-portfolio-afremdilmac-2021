@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
 
+/* Algemeen header */
+
 header {
     justify-content: space-between;
     align-items: center;
@@ -9,6 +11,7 @@ header {
     flex-basis: 100%;
 }
 
+/* Navigatie bar */
 
 .links {
     display: flex;
