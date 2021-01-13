@@ -1,14 +1,11 @@
 <!DOCTYPE html>
 <html lang="nl">
 
-  <head>
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css"">
-    <link rel="stylesheet" href="css/headernav.css">
-    <link rel="stylesheet" href="css/footer.css">
-    <link rel="stylesheet" href="css/general.css">
-    <link rel="stylesheet" href= "css/forms.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="css/contact.css">
     <!--Vendor fonts-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!--Vendor styles-->
@@ -16,90 +13,112 @@
     <link rel="stylesheet" href="vendor/slick/slick-theme.css">
     <!--Icoons FontAwesome https://fontawesome.com/-->
     <script src="https://kit.fontawesome.com/27616b8ba8.js" crossorigin="anonymous"></script>
-    <title>Politiek</title>
-  </head>
-  
-  <body>
-      <!--Titel van pagina-->
-      <!--Afbeeldingen zijn free copyright gevonden op websites zoals pixelbay.com-->
-      <header>
-        <!--Navigation geleerd op basis van: https://www.youtube.com/watch?v=PwWHL3RyQgk -->
-        <a href="index.html"><img class="logo" src="img/logonobackground.png" alt="logo"></a>
-        <!--Navigatiebalk-->
-        <nav>
-            <div class="nav__links">
+    <title>Contact</title>
+</head>
 
-                <ul>
-        
+<body>
+    <div class="wrapper">
+        <!--Titel van pagina-->
+        <!--Afbeeldingen zijn free copyright gevonden op websites zoals pixelbay.com-->
+        <header>
+            <img src="img/logonobackground.png" alt="logo"> 
+            <!--nav burger bron: https://codepen.io/erikterwan/pen/EVzeRP (geleerd op basis van ytb rogier van)-->
+           <nav role="navigation" id="mobilemenu">
+                <div id="menuToggle">
+                  <input type="checkbox" />
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <ul id="menu">
+                    <a href="index.html"><li>Home</li></a>
+                    <a href="sport.html"><li>Sport</li></a>
+                    <a href="weer.html"><li>Weer</li></a>
+                    <a href="politiek.html"><li>Politiek</li></a>
+                    <a href="contact.html"><li>Contact</li></a>
+                    <a href="inloggen.html"><li>Inloggen</li></a>
+                    <a href="register.html"><li>Registreer</li></a>
+                  </ul>
+                </div>
+                            <!--Navigatiebalk-->
+    <!--Navigation geleerd op basis van: https://www.youtube.com/watch?v=PwWHL3RyQgk -->
+            <nav>
+                <div class="nav__links">
                     <div class="links">
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="sport.html">Sport</a></li>
-                        <li><a href="weer.html">Weer</a></li>
-                        <li><a href="politiek.html">Politiek</a></li>
-                        <li><a href="contact.html">Contact</a></li>
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="sport.html">Sport</a></li>
+                            <li><a href="weer.html">Weer</a></li>
+                            <li><a href="politiek.html">Politiek</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
                     </div>
                     <div class="registreer">
-                        <li class="connexion"><a href="inloggen.html"><i class="fas fa-sign-in-alt"></i> Inloggen</a></li>
-                        <li class="connexion"><a href="register.html"><i class="fas fa-edit"></i> registreer</a></li>
+                        <ul>
+                            <li class="connexion"><a href="inloggen.html"><i class="fas fa-sign-in-alt"></i>
+                                    Inloggen</a>
+                            </li>
+                            <li class="connexion"><a href="register.html"><i class="fas fa-edit"></i> Registreer</a>
+                            </li>
+                        </ul>
                     </div>
-            </div>
-            </div>
-            </ul>
-        </nav>
+                </div>
+            </nav>
     </header>
     <main>
         <div class="wrapper">
-
-            <form>
+            <div class="contact">
                 <h2>Contacteer ons!</h2>
-            <h3>Vul dit in om ons te contacteren</h3>
-                <label for="voornaam">Voornaam</label>
-                <input type="text" id="voornaam" name="voornaam" placeholder="Uw voornaam">
+                <h3>Vul dit in om ons te contacteren</h3>
+            </div>
+            <form>
+                <label for="voornaam">Voornaam:</label>
+                <input type="text" id="voornaam" name="voornaam" placeholder="Uw voornaam:">
                 <p>
-                    <label for="familienaam">Familienaam</label>
-                    <input type="text" id="familienaam" name="familienaam" placeholder="Uw familienaam">
+                    <label for="familienaam">Familienaam:</label>
+                    <input type="text" id="familienaam" name="familienaam" placeholder="Uw familienaam:">
                 </p>
                 <p>
-                    <label for="email">Email adres</label>
-                    <input type="text" id="email" name="email" placeholder="Uw email adres">
+                    <label for="email">Email adres:</label>
+                    <input type="text" id="email" name="email" placeholder="Uw email adres:">
                 </p>
                 <p>
-                    <label for="subject">Onderwerp</label>
+                    <label for="subject">Onderwerp:</label>
+                    <textarea id="subject" name="onderwerp" placeholder="Onderwerp schrijven..."></textarea>
                 </p>
-                <textarea id="subject" name="onderwerp" placeholder="Onderwerp schrijven..."></textarea>
+                
                 <div class="register"><input type="submit" value="Indienen"></div>
             </form>
+          <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2518.3656478755393!2d4.511518816007068!3d50.86143016554673!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c3dbd3b8c6fb87%3A0xaaf82ad2c09f582a!2sRetouches%20sterrebeek!5e0!3m2!1snl!2sbe!4v1610479399465!5m2!1snl!2sbe" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe></div>
         </div>
+        
     </main>
     <!--Footer geleerd op basis van Youtube video: https://www.youtube.com/watch?v=4JQ3q0LVqEI -->
     <footer class="footer">
-        <div class="inner-footer">
-            <div class="social-links">
-                <ul>
-                    <li class="social-items"><a href="https://www.facebook.com/DilmacNews" class="fa fa-facebook"></a>
-                    </li>
-                    <li class="social-items"><a href="https://twitter.com/DilmacNews" class="fa fa-twitter"></a></li>
-                    <li class="social-items"><a href="https://www.instagram.com/dilmacnews/"
-                            class="fa fa-instagram"></a></li>
-                </ul>
+        <div class="wrapper">
+            <div class="inner-footer">
+                <div class="social-links">
+                    <ul>
+                        <li class="social-facebook"><a href="https://www.facebook.com/DilmacNews"><i
+                                    class="fab fa-facebook-square"></i></a></li>
+                        <li class="social-twitter"><a href="https://twitter.com/DilmacNews"><i
+                                    class="fab fa-twitter-square"></i></a></li>
+                        <li class="social-insta"><a href="https://www.instagram.com/dilmacnews/"><i
+                                    class="fab fa-instagram-square"></i></a></li>
+                    </ul>
+                </div>
+                <div class="quick-links">
+                    <ul>
+                        <li class="quick-items"><a href="index.html">Home</a></li>
+                        <li class="quick-items"><a href="sport.html">Sport</a></li>
+                        <li class="quick-items"><a href="weer.html">Weer</a></li>
+                        <li class="quick-items"><a href="politiek.html">Politiek</a></li>
+                        <li class="quick-items"><a href="contact.html">Contact</a></li>
+                        <li class="quick-items"><a href="registreer.html">Registreer</a></li>
+                    </ul>
+                </div>
             </div>
-
-
-            <div class="quick-links">
-                <ul>
-                    <li class="quick-items"><a href="index.html">Home</a></li>
-                    <li class="quick-items"><a href="sport.html">Sport</a></li>
-                    <li class="quick-items"><a href="weer.html">Weer</a></li>
-                    <li class="quick-items"><a href="politiek.html">Politiek</a></li>
-                    <li class="quick-items"><a href="contact.html">Contact</a></li>
-                    <li class="quick-items"><a href="registreer.html">Registreer</a></li>
-                </ul>
-            </div>
+            <div class="outer-footer">Copyright &copy; Dilmac 2020</div>
         </div>
-        <div class="outer-footer">
-            Copyright &copy; Dilmac 2020
-        </div>
-
     </footer>
 
     <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>

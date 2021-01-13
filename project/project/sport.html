@@ -1,14 +1,11 @@
 <!DOCTYPE html>
 <html lang="nl">
-<link rel="stylesheet" href="css/styles.css">
+
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="css/header.css">
-    <link rel="stylesheet" href="css/footer.css">
-    <link rel="stylesheet" href="css/general.css">
     <link rel="stylesheet" href="css/forms.css">
     <!--Vendor fonts-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -20,32 +17,52 @@
 </head>
 
 <body>
-    <!--Titel van pagina-->
-    <!--Afbeeldingen zijn free copyright gevonden op websites zoals pixelbay.com-->
-    <header>
-        <!--Navigation geleerd op basis van: https://www.youtube.com/watch?v=PwWHL3RyQgk -->
-        <a href="index.html"><img class="logo" src="img/logonobackground.png" alt="logo"></a>
-        <!--Navigatiebalk-->
-        <nav>
-            <div class="nav__links">
-
-                <ul>
-        
+    <div class="wrapper">
+        <!--Titel van pagina-->
+        <!--Afbeeldingen zijn free copyright gevonden op websites zoals pixelbay.com-->
+        <header>
+            <img src="img/logonobackground.png" alt="logo"> 
+            <!--nav burger bron: https://codepen.io/erikterwan/pen/EVzeRP (geleerd op basis van ytb rogier van)-->
+           <nav role="navigation" id="mobilemenu">
+                <div id="menuToggle">
+                  <input type="checkbox" />
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <ul id="menu">
+                    <a href="index.html"><li>Home</li></a>
+                    <a href="sport.html"><li>Sport</li></a>
+                    <a href="weer.html"><li>Weer</li></a>
+                    <a href="politiek.html"><li>Politiek</li></a>
+                    <a href="contact.html"><li>Contact</li></a>
+                    <a href="inloggen.html"><li>Inloggen</li></a>
+                    <a href="register.html"><li>Registreer</li></a>
+                  </ul>
+                </div>
+                            <!--Navigatiebalk-->
+    <!--Navigation geleerd op basis van: https://www.youtube.com/watch?v=PwWHL3RyQgk -->
+            <nav>
+                <div class="nav__links">
                     <div class="links">
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="sport.html">Sport</a></li>
-                        <li><a href="weer.html">Weer</a></li>
-                        <li><a href="politiek.html">Politiek</a></li>
-                        <li><a href="contact.html">Contact</a></li>
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="sport.html">Sport</a></li>
+                            <li><a href="weer.html">Weer</a></li>
+                            <li><a href="politiek.html">Politiek</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
                     </div>
                     <div class="registreer">
-                        <li class="connexion"><a href="inloggen.html"><i class="fas fa-sign-in-alt"></i> Inloggen</a></li>
-                        <li class="connexion"><a href="register.html"><i class="fas fa-edit"></i> registreer</a></li>
+                        <ul>
+                            <li class="connexion"><a href="inloggen.html"><i class="fas fa-sign-in-alt"></i>
+                                    Inloggen</a>
+                            </li>
+                            <li class="connexion"><a href="register.html"><i class="fas fa-edit"></i> Registreer</a>
+                            </li>
+                        </ul>
                     </div>
-            </div>
-            </div>
-            </ul>
-        </nav>
+                </div>
+            </nav>
     </header>
 
     <main>
@@ -53,7 +70,7 @@
             <div class="balk">
                 <h2>Sport</h2>
             </div>
-            <section class="columns">
+            <div class="columns">
                 <article class="column">
                     <div class="artikle">
                         <h3>Diego Maradona</h3>
@@ -80,40 +97,36 @@
                         <a href="artikel-atpfinals.html">Lees meer</a>
                     </div>
                 </article>
-            </section>
+            </div>
         </div>
     </main>
     <!--Footer geleerd op basis van Youtube video: https://www.youtube.com/watch?v=4JQ3q0LVqEI -->
     <footer class="footer">
-        <div class="inner-footer">
-            <div class="social-links">
-                <ul>
-                    <li class="social-items"><a href="https://www.facebook.com/DilmacNews" class="fa fa-facebook"></a>
-                    </li>
-                    <li class="social-items"><a href="https://twitter.com/DilmacNews" class="fa fa-twitter"></a></li>
-                    <li class="social-items"><a href="https://www.instagram.com/dilmacnews/"
-                            class="fa fa-instagram"></a></li>
-                </ul>
+        <div class="wrapper">
+            <div class="inner-footer">
+                <div class="social-links">
+                    <ul>
+                        <li class="social-facebook"><a href="https://www.facebook.com/DilmacNews"><i
+                                    class="fab fa-facebook-square"></i></a></li>
+                        <li class="social-twitter"><a href="https://twitter.com/DilmacNews"><i
+                                    class="fab fa-twitter-square"></i></a></li>
+                        <li class="social-insta"><a href="https://www.instagram.com/dilmacnews/"><i
+                                    class="fab fa-instagram-square"></i></a></li>
+                    </ul>
+                </div>
+                <div class="quick-links">
+                    <ul>
+                        <li class="quick-items"><a href="index.html">Home</a></li>
+                        <li class="quick-items"><a href="sport.html">Sport</a></li>
+                        <li class="quick-items"><a href="weer.html">Weer</a></li>
+                        <li class="quick-items"><a href="politiek.html">Politiek</a></li>
+                        <li class="quick-items"><a href="contact.html">Contact</a></li>
+                        <li class="quick-items"><a href="registreer.html">Registreer</a></li>
+                    </ul>
+                </div>
             </div>
-
-
-            <div class="quick-links">
-                <ul>
-                    <li class="quick-items"><a href="home.html">Home</a></li>
-                    <li class="quick-items"><a href="sport.html">Sport</a></li>
-                    <li class="quick-items"><a href="weer.html">Weer</a></li>
-                    <li class="quick-items"><a href="politiek.html">Politiek</a></li>
-                    <li class="quick-items"><a href="contact.html">Contact</a></li>
-                    <li class="quick-items"><a href="inloggen.html">Inloggen</a></li>
-                    <li class="quick-items"><a href="registreer.html">Registreer</a></li>
-                </ul>
-            </div>
+            <div class="outer-footer">Copyright &copy; Dilmac 2020</div>
         </div>
-        <div class="outer-footer">
-            Copyright &copy; Dilmac 2020
-
-        </div>
-
     </footer>
 
     <!--Footer geleerd op basis van Youtube video: https://www.youtube.com/watch?v=4JQ3q0LVqEI -->
