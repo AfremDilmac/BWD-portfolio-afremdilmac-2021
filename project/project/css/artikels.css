@@ -103,18 +103,12 @@ aside {
     .meer img {
         width: 100%;
         height: 100px;
-        
-     
     }
-    
 }
 @media (max-width: 600px) {
     .meer h3 {
         font-size: 1.2rem;
-        
-     
     }
-    
 }
 
 
@@ -122,17 +116,12 @@ aside {
     .meer h3 {
         font-size: 1rem;
         
-     
     }
-    
 }
 
 @media (max-width: 350px) {
     .meer img {
         width: 80%;
         height: 80px;
-        
-     
     }
-    
 }
