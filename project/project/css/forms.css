@@ -1,127 +1,139 @@
-/* SPORT  +  POLITIEK */
-.balk {
-    width: 25%;
-    justify-content: center;
-    margin: 0.5rem auto;
+/*Forms voor tussen pagina's Sport & Politiek*/
+/*Balk h2*/
+.balk
+{
+	justify-content: center;
+	margin: 0.5rem auto;
+	width: 25%;
+}
+.balk h2
+{
+	background-color: #0d87b8;
+	border-radius: 1rem;
+	color: #fff;
+	margin-bottom: 1rem;
+	padding: 0.5rem;
+	text-align: center;
+}
+.smallwrapper
+{
+	background-color: #ffffff;
+	box-shadow: 0px 4px 20px 2px #8884;
+	margin: 1rem auto;
+	margin-bottom: 4rem;
+	margin-top: 4rem;
+	max-width: 100%;
+	padding: 1rem;
+	width: 50%;
+}
+/*Inhoud pagina*/
+.column
+{
+	margin-top: 1rem;
+	text-align: center;
+}
+.column+.column
+{
+	margin: 2rem;
+}
+.artikle p
+{
+	margin-bottom: 20px;
+}
+.artikle a
+{
+	background-color: #0d87b8;
+	border-radius: 8px;
+	color: #fff;
+	padding: 8px;
+	text-decoration: none;
+}
+.artikle a:hover
+{
+	background-color: black;
+	transition: 0.5s;
 }
 
-.balk h2 {
-    background-color: #0d87b8;
-    border-radius: 1rem;
-    color: #fff;
-    padding: 0.5rem;
-    text-align: center;
-    margin-bottom: 1rem;
+/* Media Queries */
+
+@media (max-width: 875px)
+{
+	.balk h2
+	{
+		font-size: 1.2rem;
+	}
 }
-
-.smallwrapper {
-    margin: 1rem auto;
-    margin-top: 4rem;
-    margin-bottom: 4rem;
-    padding: 1rem;
-    box-shadow: 0px 4px 20px 2px #8884;
-    max-width: 100%;
-    width: 50%;
-    background-color: white;
+@media (max-width: 560px)
+{
+	.balk h2
+	{
+		font-size: 1rem;
+	}
 }
-
-/* Centreren van lees meer */
-.column {
-    margin-top: 1rem;
-    text-align: center;
+@media (max-width: 470px)
+{
+	.balk h2
+	{
+		font-size: 0.6rem;
+	}
 }
-
-.column+.column {
-    margin: 2rem;
+@media (max-width: 700px)
+{
+	.artikle p
+	{
+		font-size: 1rem;
+	}
 }
-
-.artikle p {
-    margin-bottom: 20px;
+@media (max-width: 650px)
+{
+	.artikle a
+	{
+		font-size: 0.9rem;
+	}
+	.artikle p
+	{
+		font-size: 0.9rem;
+	}
+	.artikle img
+	{
+		height: 60%;
+	}
+	.artikle h3
+	{
+		font-size: 1.4rem;
+	}
 }
-
-.artikle a {
-    background-color: #0d87b8;
-    border-radius: 8px;
-    color: #fff;
-    padding: 8px;
-    text-decoration: none;
-}
-
-.artikle a:hover {
-    background-color: black;
-    transition: 0.5s;
-}
-
-
-@media (max-width: 875px) {
-    .balk h2  {
-        font-size: 1.2rem;
-    }
-}
-
-@media (max-width: 560px) {
-    .balk h2  {
-        font-size: 1rem;
-    }
-}
-
-
-@media (max-width: 470px) {
-    .balk h2  {
-        font-size: 0.6rem;
-    }
-}
-
-@media (max-width: 700px) {
-    .artikle p{
-        font-size: 1rem;
-    }
-}
-
-@media (max-width: 650px) {
-    .artikle a  {
-        font-size: 0.9rem;
-    }
-    .artikle p{
-        font-size: 0.9rem;
-    }
-
-    .artikle img{
-        height: 60%;
-    }
-    .artikle h3{
-        font-size: 1.4rem;
-    }
-
-
-}
-
-@media (max-width: 450px) {
-    .artikle a  {
-        font-size: 0.6rem;
-    }
-    .artikle p{
-        font-size: 0.6rem;
-    }
-
-    .artikle img{
-        height: 40%;
-    }
-
-    .artikle h3{
-        font-size: 1rem;
-    }
-
-    @media (max-width: 320px) {
-        .artikle a  {
-            font-size: 0.4rem;
-        }
-        .artikle p{
-            font-size: 0.4rem;
-        }
-
-        .artikle img{
-            height: 20%;
-        }
-    }
+@media (max-width: 450px)
+{
+	.artikle a
+	{
+		font-size: 0.6rem;
+	}
+	.artikle p
+	{
+		font-size: 0.6rem;
+	}
+	.artikle img
+	{
+		height: 40%;
+	}
+	.artikle h3
+	{
+		font-size: 1rem;
+	}
+	@media (max-width: 320px)
+	{
+		.artikle a
+		{
+			font-size: 0.4rem;
+		}
+		.artikle p
+		{
+			font-size: 0.4rem;
+		}
+		.artikle img
+		{
+			height: 20%;
+		}
+	}
 }

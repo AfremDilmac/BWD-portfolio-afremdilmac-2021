@@ -1,124 +1,129 @@
-main .wrapper {
-    background-color: #fff;
-    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
-    padding-bottom: 2rem;
+main .wrapper
+{
+	background-color: #fff;
+	box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+	padding-bottom: 2rem;
+}
+.registreren
+{
+	text-align: center;
+}
+form
+{
+	text-align: center;
+}
+label
+{
+	margin: 0rem 2rem;
+	text-align: center;
+}
+input[type=email]
+{
+	height: 35px;
+	margin-top: 1rem;
+}
+input[type=password]
+{
+	height: 35px;
+	margin-right: 59px;
+	margin-top: 1rem;
+}
+h2, h3
+{
+	padding: 1rem;
+}
+#land
+{
+	height: 35px;
+	margin-top: 1rem;
 }
 
-.registreren {
-    text-align: center
+/*Registerbutton*/
+.register
+{
+	margin: 2rem;
+}
+.register a
+{
+	background-color: #0d87b8;
+	border-radius: 8px;
+	color: #fff;
+	padding: 8px 50px;
+	text-decoration: none;
+}
+.register a:hover
+{
+	background-color: black;
+	transition: 0.5s;
+}
+.privacy
+{
+	margin-top: 20px;
+	text-align: center;
+}
+.privacy p
+{
+	margin-bottom: 20px;
 }
 
-form {
-    text-align: center;
+/*Loginbutton*/
+
+.buttonlogin
+{
+	background-color: #0d87b8;
+	border-radius: 8px;
+	color: #fff;
+	margin-left: 2rem;
+	padding: 8px 50px;
+	text-decoration: none;
+}
+.buttonlogin:hover
+{
+	background-color: black;
+	transition: 0.5s;
+}
+.waarden
+{
+	border-radius: 8px;
+	color: #0d87b8;
+	text-decoration: none;
 }
 
-label {
-    text-align: center;
-    margin: 0rem 2rem;
+/* Media Queries */
+
+@media (max-width: 650px)
+{
+	.buttonlogin
+	{
+		font-size: 0.8rem;
+		padding: 4px 20px;
+	}
+	.register a
+	{
+		font-size: 0.8rem;
+		padding: 4px 20px;
+	}
+	p
+	{
+		font-size: 0.8rem;
+	}
+	h2
+	{
+		font-size: 1.8rem;
+	}
+	h3
+	{
+		font-size: 1.4rem;
+	}
 }
-
-input[type=email] {
-    margin-top: 1rem;
-    height: 35px;
-}
-
-input[type=password] {
-    margin-top: 1rem;
-    margin-right: 59px;
-    height: 35px;
-}
-
-h2, h3{
-    padding: 1rem;
-}
-
-#land {
-    margin-top: 1rem;
-    height: 35px;
-}
-
-.register {
-    margin: 2rem;
-}
-
-.register a {
-    background-color: #0d87b8;
-    border-radius: 8px;
-    color: #fff;
-    padding: 8px 50px;
-    text-decoration: none;
-}
-
-.register a:hover {
-    background-color: black;
-    transition: 0.5s;
-}
-
-.privacy {
-    margin-top: 20px;
-    text-align: center;
-}
-
-.privacy p {
-    margin-bottom: 20px;
-
-}
-
-.buttonlogin {
-    margin-left: 2rem;
-    background-color: #0d87b8;
-    border-radius: 8px;
-    color: #fff;
-    padding: 8px 50px;
-    text-decoration: none;
-}
-
-.buttonlogin:hover {
-    background-color: black;
-    transition: 0.5s;
-}
-
-.waarden {
-   
-   
-    border-radius: 8px;
-    color: #0d87b8;
-
-    text-decoration: none;
-}
-
-@media (max-width: 650px) {
-    .buttonlogin{
-        font-size: 0.8rem;
-        padding: 4px 20px;
-        
-    }
-
-    .register a{
-        font-size: 0.8rem;
-        padding: 4px 20px;
-    }
-    p{
-        font-size: 0.8rem;
-    }
-    h2{
-        font-size: 1.8rem;
-    }
-    h3{
-        font-size: 1.4rem;
-    }
-   
-}
-
-@media (max-width: 750px) {
-    
-    p{
-        font-size: 1rem;
-      
-    }
-    label{
-        font-size: 1rem;
-    }
-
-
+@media (max-width: 750px)
+{
+	p
+	{
+		font-size: 1rem;
+	}
+	label
+	{
+		font-size: 1rem;
+	}
 }

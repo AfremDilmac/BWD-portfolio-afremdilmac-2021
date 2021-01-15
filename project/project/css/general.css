@@ -1,39 +1,35 @@
-* {
-    box-sizing: border-box;
-    margin: 0px;
-    padding: 0px;
+/*Css general instellingen*/
+*
+{
+	box-sizing: border-box;
+	margin: 0px;
+	padding: 0px;
 }
-
-body {
-    background-color: #F5F5F5;
-    font-size: 1.4rem;
-    max-height: 100%;
-    max-width: 100%;
-    font-family: "Montserrat", sans-serif;
+body
+{
+	background-color: #F5F5F5;
+	font-family: "Montserrat", sans-serif;
+	font-size: 1.4rem;
+	max-height: 100%;
+	max-width: 100%;
 }
-
-/* html {
-    font-size: 62.5%;
-} */
-
-img {
-    max-height: 100%;
-    max-width: 100%;
+img
+{
+	max-height: 100%;
+	max-width: 100%;
 }
-
-header {
-    margin: 0 auto;
-    max-width: 1250px;
+header
+{
+	margin: 0 auto;
+	max-width: 1250px;
 }
-
-main .wrapper {
-    margin: 2rem auto;
-    max-width: 1250px;
+main .wrapper
+{
+	margin: 2rem auto;
+	max-width: 1250px;
 }
-
-
-footer .wrapper {
-    margin: 0 auto;
-    max-width: 1100px;
+footer .wrapper
+{
+	margin: 0 auto;
+	max-width: 1100px;
 }
-
