@@ -156,4 +156,10 @@ h3
 		height: 6rem;
 		width: 40%;
 	}
+	main .wrapper h3{
+		font-size: 1.5rem;
+	}
+	main .wrapper a p {
+		font-size: 0.9rem;
+	}
 }
