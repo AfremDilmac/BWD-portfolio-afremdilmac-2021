@@ -105,35 +105,27 @@
 }
 @media (max-width: 450px)
 {
+	.smallwrapper{
+		width: 80%;
+	}
 	.artikle a
 	{
-		font-size: 0.6rem;
+		margin-top: 0rem;
+		font-size: 0.8rem;
+		padding: 0.3rem;
 	}
 	.artikle p
 	{
-		font-size: 0.6rem;
+		font-size: 0.9rem;
+		margin-bottom: 0.2rem;
 	}
 	.artikle img
 	{
 		height: 40%;
 	}
-	.artikle h3
+	.balk h2
 	{
-		font-size: 1rem;
+		font-size: 0.9rem;
 	}
-	@media (max-width: 320px)
-	{
-		.artikle a
-		{
-			font-size: 0.4rem;
-		}
-		.artikle p
-		{
-			font-size: 0.4rem;
-		}
-		.artikle img
-		{
-			height: 20%;
-		}
-	}
+
 }

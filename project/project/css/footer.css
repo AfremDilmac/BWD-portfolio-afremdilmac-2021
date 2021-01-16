@@ -25,7 +25,8 @@
 }
 .social-facebook a
 {
-	color: #3558a1;
+	color: #ffff;
+	box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 .social-facebook a:hover
 {
@@ -34,7 +35,8 @@
 }
 .social-twitter a
 {
-	color: #55ACEE;
+	color: #ffff;
+	box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 .social-twitter a:hover
 {
@@ -43,7 +45,8 @@
 }
 .social-insta a
 {
-	color: rgb(168, 48, 168);
+	color: #ffff;
+	box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 .social-insta a:hover
 {
